@@ -1,0 +1,87 @@
+/* Define new color palette */
+:root {
+  --light-blue: #E3F2FD;
+  --bright-blue: #00A6FB;
+  --medium-blue: #0582CA;
+  --dark-blue: #003554;
+  --very-dark-blue: #051923;
+}
+
+/* General body styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Anaheim", serif;
+  background-image: url('background1.jpeg'); /* Replace with your 1920x1080 background image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-blue);
+  text-align: center;
+}
+
+/* Splash container styling */
+.splash-container {
+  background-color: rgba(5, 25, 35, 0.8); /* Semi-transparent very dark blue background */
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Website title styling */
+.website-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--bright-blue);
+}
+
+/* Website mission styling */
+.website-mission {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: var(--light-blue);
+}
+
+/* Group members list styling */
+.group-members {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.group-members p {
+  font-weight: 600;
+  color: var(--medium-blue);
+}
+
+.group-members ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.group-members ul li {
+  margin: 10px 0;
+  color: var(--light-blue);
+}
+
+/* Loader animation */
+.loader {
+  border: 4px solid var(--light-blue); /* Light blue border */
+  border-top: 4px solid var(--bright-blue); /* Bright blue spinner */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
