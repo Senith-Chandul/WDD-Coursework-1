@@ -1,3 +1,6 @@
+/* Import Barlow font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anaheim:wght@400..800&display=swap');
+
 /* Define new color palette */
 :root {
   --light-blue: #E3F2FD;
@@ -7,25 +10,32 @@
   --very-dark-blue: #051923;
 }
 
-/* General body styling */
-body {
+* {
   margin: 0;
   padding: 0;
   font-family: "Anaheim", serif;
-  background-image: url('background1.jpeg'); /* Replace with your 1920x1080 background image */
+}
+
+body {
+  background: url('assets/background1.jpeg') no-repeat center center fixed;
   background-size: cover;
-  background-position: center;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: var(--light-blue);
   text-align: center;
 }
 
+/* General body styling */
+.splash-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 /* Splash container styling */
 .splash-container {
-  background-color: rgba(5, 25, 35, 0.8); /* Semi-transparent very dark blue background */
+  background-color: rgba(5, 25, 35, 0.8);
   padding: 40px;
   border-radius: 10px;
   max-width: 600px;
@@ -62,7 +72,10 @@ body {
 
 .group-members ul {
   list-style-type: none;
-  padding: 0;
+  display: flex;
+  justify-content: space-between; 
+  gap: 20px;
+  padding: 0 150px;
 }
 
 .group-members ul li {
@@ -81,7 +94,124 @@ body {
   margin: 20px auto;
 }
 
+
+/* Home Page Specific Styles */
+.main-header {
+  background-color: var(--dark-blue);
+  padding: 1rem 0;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list a {
+  color: var(--light-blue);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-list li:hover {
+  color: var(--bright-blue);
+  animation: shake 0.5s;
+}
+
+.active {
+  color: var(--bright-blue) !important;
+  border-bottom: 2px solid var(--bright-blue);
+}
+
+.home-main {
+  padding: 2rem;
+  min-height: 70vh;
+}
+
+.home-title {
+  color: var(--bright-blue);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.content-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tile {
+  background-color: var(--light-blue);
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.tile:hover {
+  transform: translateY(-10px);
+}
+
+.tile-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.tile h3 {
+  color: var(--very-dark-blue);
+  padding: 1rem;
+  margin: 0;
+}
+
+.tile p {
+  color: var(--dark-blue);
+  padding: 0 1rem 1rem;
+  margin: 0;
+}
+
+.main-footer {
+  background-color: var(--very-dark-blue);
+  color: var(--light-blue);
+  padding: 1rem;
+  text-align: center;
+}
+
+.editor-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.editor-links a {
+  color: var(--medium-blue);
+  text-decoration: none;
+}
+
+.editor-links a:hover {
+  color: var(--bright-blue);
+}
+
+
+/****************************************************************************************/
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
 }
