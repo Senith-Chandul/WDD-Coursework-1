@@ -1,15 +1,14 @@
-<!-- Update home.html -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - Life Below Water</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body id="home">
+<body>
   <header class="main-header">
     <nav>
       <ul class="nav-list">
@@ -27,61 +26,47 @@
   <section class="hero-section">
     <div class="hero-content">
       <h1>Protect Our Oceans</h1>
-      <p class="hero-text">
-        Working towards UN Sustainable Development Goal 14: Conserve and
-        sustainably use the oceans, seas and marine resources for sustainable
-        development.
-      </p>
-      <div class="scroll-indicator"></div>
+      <p class="hero-text">Working towards UN Sustainable Development Goal 14: Conserve and sustainably use the oceans,
+        seas and marine resources for sustainable development.</p>
     </div>
   </section>
 
-  <main class="content-container">
+  <main class="content-container" id="home-content">
     <section class="key-issues fade-in">
       <h2>Our Focus Areas</h2>
       <div class="content-tiles">
-        <div class="content-tiles">
-          <a href="content_ST1.html" class="tile">
-            <div class="tile-image" style="background-image: url('assets/marine-pollution.jpg')">
-              <div class="tile-overlay">
-                <h3>Marine Pollution</h3>
-                <p>
-                  Addressing plastic waste and chemical contamination in our
-                  oceans
-                </p>
-              </div>
+        <a href="content_ST1.html" class="tile">
+          <div class="tile-image" style="background-image: url('assets/marine-pollution.jpg');">
+            <div class="tile-overlay">
+              <h3>Marine Pollution</h3>
+              <p>Addressing plastic waste and chemical contamination in our oceans</p>
             </div>
-          </a>
-          <a href="content_ST2.html" class="tile">
-            <div class="tile-image" style="background-image: url('assets/coral-reefs.jpg')">
-              <div class="tile-overlay">
-                <h3>Coral Reef Protection</h3>
-                <p>Preserving marine ecosystems and biodiversity</p>
-              </div>
+          </div>
+        </a>
+        <a href="content_ST2.html" class="tile">
+          <div class="tile-image" style="background-image: url('assets/coral-reefs.jpg');">
+            <div class="tile-overlay">
+              <h3>Coral Reef Protection</h3>
+              <p>Preserving marine ecosystems and biodiversity</p>
             </div>
-          </a>
-          <a href="content_ST3.html" class="tile">
-            <div class="tile-image" style="background-image: url('assets/sustainable-fishing.jpg')">
-              <div class="tile-overlay">
-                <h3>Sustainable Fishing</h3>
-                <p>
-                  Promoting responsible fishing practices and ocean management
-                </p>
-              </div>
+          </div>
+        </a>
+        <a href="content_ST3.html" class="tile">
+          <div class="tile-image" style="background-image: url('assets/sustainable-fishing.jpg');">
+            <div class="tile-overlay">
+              <h3>Sustainable Fishing</h3>
+              <p>Promoting responsible fishing practices and ocean management</p>
             </div>
-          </a>
-          <a href="content_ST4.html" class="tile">
-            <div class="tile-image" style="background-image: url('assets/climate-impact.jpg')">
-              <div class="tile-overlay">
-                <h3>Climate Impact</h3>
-                <p>
-                  Understanding and addressing climate change effects on
-                  marine life
-                </p>
-              </div>
+          </div>
+        </a>
+        <a href="content_ST4.html" class="tile">
+          <div class="tile-image" style="background-image: url('assets/climate-impact.jpg');">
+            <div class="tile-overlay">
+              <h3>Climate Impact</h3>
+              <p>Understanding and addressing climate change effects on marine life</p>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
     </section>
 
@@ -105,17 +90,25 @@
   </footer>
 
   <script>
-    // Add scroll reveal animation
-    window.addEventListener("scroll", function () {
-      const elements = document.querySelectorAll(".fade-in");
-      elements.forEach((element) => {
-        const elementTop = element.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-        if (elementTop < windowHeight - 100) {
-          element.style.opacity = "1";
-          element.style.transform = "translateY(0)";
-        }
-      });
+    // JavaScript for fade-in effect on scroll
+    document.addEventListener('DOMContentLoaded', function () {
+      const fadeElements = document.querySelectorAll('.fade-in');
+
+      const fadeInOnScroll = () => {
+        fadeElements.forEach(element => {
+          const elementTop = element.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+
+          if (elementTop < windowHeight - 100) {
+            element.style.opacity = "1";
+            element.style.transform = "translateY(0)";
+          }
+        });
+      };
+
+      // Trigger on page load and scroll
+      fadeInOnScroll();
+      window.addEventListener('scroll', fadeInOnScroll);
     });
   </script>
 </body>
