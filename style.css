@@ -1,5 +1,5 @@
 /* Import Barlow font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Anaheim:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anaheim:wght@400..800&family=Oswald:wght@200..700&display=swap');
 
 /* Define new color palette */
 :root {
@@ -8,19 +8,22 @@
   --medium-blue: #0582CA;
   --dark-blue: #003554;
   --very-dark-blue: #051923;
+  --heading-font: 'Oswald', sans-serif;
+  --body-font: 'Anaheim', serif;
+  --background-image: url('assets/background.jpg');
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Anaheim", serif;
+  font-family: var(--body-font);
 }
 
 
 /* Splash Screen Styles */
 #splash {
-  background: url('assets/background.jpg') no-repeat center center fixed;
+  background: var(--background-image) no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -88,11 +91,6 @@
 }
 
 /* Home Page Styles */
-body#home {
-  background-color: var(--very-dark-blue);
-  color: var(--light-blue);
-}
-
 .main-header {
   position: fixed;
   width: 100%;
@@ -116,6 +114,7 @@ body#home {
   color: var(--light-blue);
   text-decoration: none;
   font-weight: 500;
+  font-size: 1.1rem;
   transition: color 0.3s ease;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
@@ -137,7 +136,7 @@ body#home {
 .hero-section {
   height: 100vh;
   background: linear-gradient(rgba(5, 25, 35, 0.7), rgba(5, 25, 35, 0.7)),
-              url('assets/background.jpg') no-repeat center center/cover;
+              var(--background-image) no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,17 +145,21 @@ body#home {
 }
 
 .hero-section h1 {
+  font-family: var(--heading-font);
+  font-weight: 500;
   color: var(--bright-blue);
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
+  font-size: 5rem;
+  text-transform: uppercase;
+  margin-bottom: -0.5rem;
 }
 
 .hero-text {
   color: var(--light-blue);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
+  padding-bottom: 4rem;
 }
 
 .hero-content {
@@ -165,6 +168,10 @@ body#home {
 }
 
 /* Content Sections */
+#home-content {
+  background-color: var(--light-blue);
+}
+
 .content-container {
   position: relative;
   z-index: 1;
@@ -177,6 +184,8 @@ body#home {
 }
 
 .call-to-action {
+  background: linear-gradient(rgba(5, 25, 35, 0.7), rgba(5, 25, 35, 0.7)),
+              var(--background-image) no-repeat center center/cover;
   padding: 4rem 2rem;
 }
 
@@ -193,11 +202,6 @@ body#home {
 }
 
 /* Tiles & Overlay */
-.key-issues h2 {
-  color: var(--bright-blue);
-  margin-bottom: 2rem;
-}
-
 .content-tiles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -231,7 +235,7 @@ body#home {
   background: linear-gradient(rgba(2, 10, 13, 0.35), rgba(5, 20, 26, 0.9));
   padding: 2rem;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.5s ease;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -256,16 +260,8 @@ body#home {
   padding-bottom: 1rem;
 }
 
-/* Footer */
-.main-footer {
-  background-color: var(--very-dark-blue);
-  padding: 2rem;
-  text-align: center;
-  margin-top: 3rem;
-}
-
 .call-to-action h2 {
-  color: var(--bright-blue);
+  color: var(--light-blue);
   margin-bottom: 2rem;
 }
 
@@ -276,17 +272,76 @@ body#home {
 }
 
 .action-button {
-  background-color: var(--bright-blue);
+  border: 3.5px solid var(--light-blue);
   color: var(--light-blue);
-  padding: 1rem 2rem;
-  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 0.8rem 1.6rem;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  font-weight: 500;
+  transition: background-color 0.5s ease;
 }
 
 .action-button:hover {
-  background-color: var(--medium-blue);
+  background-color: var(--light-blue);
+  color: var(--medium-blue);
 }
+
+/* Footer */
+.main-footer {
+  background-color: var(--very-dark-blue);
+  padding: 2rem;
+  text-align: center;
+}
+
+.main-footer p {
+  color: var(--light-blue);
+  font-size: 1rem;
+}
+
+.main-footer div {
+  margin-top: 0.3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.main-footer a:hover {
+  color: var(--medium-blue);
+}
+
+.main-footer a {
+  color: var(--bright-blue);
+  text-decoration: none;
+}
+
+/* Non-Specific */
+.h2-heading {
+  color: var(--bright-blue);
+  margin-bottom: 2rem;
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+
+.button {
+  border: 3.5px solid var(--medium-blue);
+  color: var(--medium-blue);
+  font-size: 1.2rem;
+  padding: 0.8rem 1.6rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.5s ease;
+}
+
+.button:hover {
+  background-color: var(--medium-blue);
+  color: var(--light-blue);
+}
+
+
+
+
 
 /* Animations */
 @keyframes spin {
