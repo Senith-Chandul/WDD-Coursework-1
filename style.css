@@ -20,7 +20,7 @@
 
 /* Splash Screen Styles */
 #splash {
-  background: url('assets/background.jpeg') no-repeat center center fixed;
+  background: url('assets/background.jpg') no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -137,7 +137,7 @@ body#home {
 .hero-section {
   height: 100vh;
   background: linear-gradient(rgba(5, 25, 35, 0.7), rgba(5, 25, 35, 0.7)),
-              url('assets/background.jpeg') no-repeat center center/cover;
+              url('assets/background.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
