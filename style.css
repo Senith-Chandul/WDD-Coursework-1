@@ -13,19 +13,20 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Anaheim", serif;
 }
 
 body {
-  background: url('assets/background1.jpeg') no-repeat center center fixed;
-  background-size: cover;
-  height: 100vh;
   color: var(--light-blue);
   text-align: center;
 }
 
 /* General body styling */
-.splash-body {
+#splash {
+  background: url('assets/background1.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,8 +97,19 @@ body {
 
 
 /* Home Page Specific Styles */
+#home {
+  background-color: white;
+  color: var(--light-blue);
+}
+
+
 .main-header {
-  background: transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background: rgba(5, 25, 35, 0.1);
+  backdrop-filter: blur(5px);
   padding: 1rem 0;
 }
 
@@ -203,10 +215,14 @@ body {
 }
 
 .hero-section {
-  background-color: rgba(5, 25, 35, 0.8);
-  padding: 4rem 2rem;
+  height: 100vh;
+  background: linear-gradient(rgba(5, 25, 35, 0.7), rgba(5, 25, 35, 0.7)), 
+              url('assets/background1.jpeg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  margin-bottom: 3rem;
+  padding: 0 20px;
 }
 
 .hero-section h1 {
@@ -221,6 +237,36 @@ body {
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding-top: 80px;
+}
+
+.scroll-indicator {
+  width: 30px;
+  height: 50px;
+  border: 2px solid var(--bright-blue);
+  border-radius: 25px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+}
+
+.scroll-indicator::after {
+  content: '';
+  width: 6px;
+  height: 10px;
+  background: var(--bright-blue);
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
+  animation: scroll 2s infinite;
 }
 
 .key-issues {
@@ -301,6 +347,18 @@ body {
   background-color: var(--medium-blue);
 }
 
+.content-container {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
 /****************************************************************************************/
 
 @keyframes spin {
@@ -314,4 +372,16 @@ body {
   50% { transform: translateX(5px); }
   75% { transform: translateX(-5px); }
   100% { transform: translateX(0); }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+  40% { transform: translateY(-30px) translateX(-50%); }
+  60% { transform: translateY(-15px) translateX(-50%); }
+}
+
+@keyframes scroll {
+  0% { opacity: 0; transform: translateY(0) translateX(-50%); }
+  30% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(20px) translateX(-50%); }
 }
