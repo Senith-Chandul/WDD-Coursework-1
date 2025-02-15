@@ -1,66 +1,124 @@
+<!-- Update home.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - Protect Our Oceans</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - Life Below Water</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="home-body">
+
+<body>
   <header class="main-header">
-    <nav class="navbar">
+    <nav>
       <ul class="nav-list">
         <li><a href="home.html" class="active">Home</a></li>
         <li><a href="volunteer.html">Volunteer</a></li>
-        <li><a href="table.html">Ocean Data</a></li>
+        <li><a href="table.html">Impact Data</a></li>
         <li><a href="profile.html">Profile</a></li>
         <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+        <li><a href="team.html">Team</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="home-main">
-    <h1 class="home-title">Life Below Water</h1>
-    
-    <div class="content-tiles">
-      <!-- Tile 1: Marine Conservation -->
-      <a href="content_ST1.html" class="tile">
-        <div class="tile-image" style="background-image: url('marine-conservation.jpg')"></div>
-        <h3>Marine Conservation</h3>
-        <p>Explore efforts to protect endangered marine species</p>
-      </a>
-
-      <!-- Tile 2: Ocean Data -->
-      <a href="table.html" class="tile">
-        <div class="tile-image" style="background-image: url('ocean-data.jpg')"></div>
-        <h3>Ocean Data</h3>
-        <p>Interactive data about ocean health metrics</p>
-      </a>
-
-      <!-- Tile 3: Volunteer -->
-      <a href="volunteer.html" class="tile">
-        <div class="tile-image" style="background-image: url('volunteer.jpg')"></div>
-        <h3>Volunteer</h3>
-        <p>Join coastal cleanup programs</p>
-      </a>
-
-      <!-- Tile 4: Team -->
-      <a href="team.html" class="tile">
-        <div class="tile-image" style="background-image: url('team.jpg')"></div>
-        <h3>Our Team</h3>
-        <p>Meet the ocean advocates</p>
-      </a>
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Protect Our Oceans</h1>
+      <p class="hero-text">
+        Working towards UN Sustainable Development Goal 14: Conserve and
+        sustainably use the oceans, seas and marine resources for sustainable
+        development.
+      </p>
+      <div class="scroll-indicator"></div>
     </div>
+  </section>
+
+  <main class="content-container">
+    <section class="key-issues fade-in">
+      <h2>Our Focus Areas</h2>
+      <div class="content-tiles">
+        <h2>Our Focus Areas</h2>
+        <div class="content-tiles">
+          <a href="content_ST1.html" class="tile">
+            <div class="tile-image" style="background-image: url('assets/marine-pollution.jpg')">
+              <div class="tile-overlay">
+                <h3>Marine Pollution</h3>
+                <p>
+                  Addressing plastic waste and chemical contamination in our
+                  oceans
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="content_ST2.html" class="tile">
+            <div class="tile-image" style="background-image: url('assets/coral-reefs.jpg')">
+              <div class="tile-overlay">
+                <h3>Coral Reef Protection</h3>
+                <p>Preserving marine ecosystems and biodiversity</p>
+              </div>
+            </div>
+          </a>
+          <a href="content_ST3.html" class="tile">
+            <div class="tile-image" style="background-image: url('assets/sustainable-fishing.jpg')">
+              <div class="tile-overlay">
+                <h3>Sustainable Fishing</h3>
+                <p>
+                  Promoting responsible fishing practices and ocean management
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="content_ST4.html" class="tile">
+            <div class="tile-image" style="background-image: url('assets/climate-impact.jpg')">
+              <div class="tile-overlay">
+                <h3>Climate Impact</h3>
+                <p>
+                  Understanding and addressing climate change effects on
+                  marine life
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="call-to-action fade-in">
+      <h2>Take Action Now</h2>
+      <div class="action-buttons">
+        <a href="volunteer.html" class="action-button">Join Our Initiatives</a>
+        <a href="feedback.html" class="action-button">Share Your Ideas</a>
+      </div>
+    </section>
   </main>
 
   <footer class="main-footer">
-    <p>© 2025 Protect Our Oceans</p>
+    <p>&copy; 2025 Life Below Water Initiative</p>
     <div class="editor-links">
-      <a href="pageEditor_ST1.html" target="_blank">Editor: Student 1</a>
-      <a href="pageEditor_ST2.html" target="_blank">Editor: Student 2</a>
-      <a href="pageEditor_ST3.html" target="_blank">Editor: Student 3</a>
-      <a href="pageEditor_ST4.html" target="_blank">Editor: Student 4</a>
+      <a href="pageEditor_ST1.html">Editor 1</a>
+      <a href="pageEditor_ST2.html">Editor 2</a>
+      <a href="pageEditor_ST3.html">Editor 3</a>
+      <a href="pageEditor_ST4.html">Editor 4</a>
     </div>
   </footer>
+
+  <script>
+    // Add scroll reveal animation
+    window.addEventListener("scroll", function () {
+      const elements = document.querySelectorAll(".fade-in");
+      elements.forEach((element) => {
+        const elementTop = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if (elementTop < windowHeight - 100) {
+          element.style.opacity = "1";
+          element.style.transform = "translateY(0)";
+        }
+      });
+    });
+  </script>
 </body>
+
 </html>

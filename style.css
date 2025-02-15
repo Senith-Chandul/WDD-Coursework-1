@@ -97,7 +97,7 @@ body {
 
 /* Home Page Specific Styles */
 .main-header {
-  background-color: var(--dark-blue);
+  background: transparent;
   padding: 1rem 0;
 }
 
@@ -115,6 +115,7 @@ body {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .nav-list li:hover {
@@ -153,6 +154,7 @@ body {
   text-decoration: none;
   transition: transform 0.3s ease;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: relative;
 }
 
 .tile:hover {
@@ -200,6 +202,104 @@ body {
   color: var(--bright-blue);
 }
 
+.hero-section {
+  background-color: rgba(5, 25, 35, 0.8);
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-section h1 {
+  color: var(--bright-blue);
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text {
+  color: var(--light-blue);
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.key-issues {
+  padding: 2rem;
+  text-align: center;
+}
+
+.key-issues h2 {
+  color: var(--bright-blue);
+  margin-bottom: 2rem;
+}
+
+.tile-image {
+  position: relative;
+  height: 300px;
+}
+
+.tile-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(5, 25, 35, 0.99)), rgba(0, 0, 0, 0.5);
+  padding: 2rem 1rem;
+  color: var(--light-blue);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tile:hover .tile-overlay {
+  opacity: 1;
+}
+
+.tile-overlay h3 {
+  color: var(--bright-blue);
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.tile-overlay p {
+  color: var(--light-blue);
+}
+
+.call-to-action {
+  background-color: rgba(5, 25, 35, 0.8);
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.call-to-action h2 {
+  color: var(--bright-blue);
+  margin-bottom: 2rem;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.action-button {
+  background-color: var(--bright-blue);
+  color: var(--light-blue);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: var(--medium-blue);
+}
 
 /****************************************************************************************/
 
