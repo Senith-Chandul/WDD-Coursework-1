@@ -10,7 +10,7 @@
   --very-dark-blue: #051923;
   --heading-font: 'Oswald', sans-serif;
   --body-font: 'Anaheim', serif;
-  --background-image: url('assets/background.jpg');
+  --background-image: url('../assets/background.jpg');
 }
 
 * {
@@ -125,6 +125,11 @@
 
 .nav-list a:hover {
   color: var(--bright-blue);
+}
+
+.scrolled {
+  background-color: rgba(5, 25, 35, 0.9);
+  transition: background-color 1s ease;
 }
 
 .active {
@@ -245,6 +250,10 @@
 
 .tile:hover .tile-overlay {
   opacity: 1;
+}
+
+.tile:hover {
+  transform: translateY(-10px);
 }
 
 .tile-overlay h3 {

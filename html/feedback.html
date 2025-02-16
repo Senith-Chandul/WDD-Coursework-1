@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback - Protect Our Oceans</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/feedback.css">
+</head>
+<body class="feedback-body">
+  <header class="main-header">
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="table.html">Ocean Data</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="feedback.html" class="active">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="feedback-main">
+    <h1 class="feedback-title">Feedback</h1>
+    
+    <form class="feedback-form">
+      <div class="form-group">
+        <label for="name">Enter Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Enter Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+      </div>
+
+      <div class="form-group">
+        <label>Was This Your First Time Visiting?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="first-time" value="yes" required> Yes</label>
+          <label><input type="radio" name="first-time" value="no"> No</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Was This Website Informative And Easy To Navigate Through?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="navigate" value="yes" required> Yes</label>
+          <label><input type="radio" name="navigate" value="no"> No</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="improvements">If "No", suggest any improvements for the future:</label>
+        <textarea id="improvements" name="improvements" placeholder="Add your message here"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>How satisfied are you with Our Services? Choose from 0 to 10, with 1 being "Not satisfied at all." and 10 being "Extremely satisfied"</label>
+        <div class="rating">
+          <span>1</span>
+          <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" step="1" required>
+          <span>10</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Would You Recommend our services?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="recommend" value="yes" required> Yes</label>
+          <label><input type="radio" name="recommend" value="no"> No</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="questions">If "No", do you have any additional questions or requests?</label>
+        <textarea id="questions" name="questions" placeholder="Add your message here"></textarea>
+      </div>
+
+      <button type="submit" class="submit-button">Send Feedback</button>
+    </form>
+  </main>
+
+  <footer class="main-footer">
+    <p>© 2025 Protect Our Oceans</p>
+    <div class="editor-links">
+      <a href="pageEditor_ST1.html" target="_blank">Editor: Student 1</a>
+      <a href="pageEditor_ST2.html" target="_blank">Editor: Student 2</a>
+      <a href="pageEditor_ST3.html" target="_blank">Editor: Student 3</a>
+      <a href="pageEditor_ST4.html" target="_blank">Editor: Student 4</a>
+    </div>
+  </footer>
+</body>
+</html>

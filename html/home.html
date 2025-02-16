@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - Life Below Water</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -36,7 +36,7 @@
       <h2 class="h2-heading">Our Focus Areas</h2>
       <div class="content-tiles">
         <a href="content_ST1.html" class="tile">
-          <div class="tile-image" style="background-image: url('assets/marine-pollution.jpg');">
+          <div class="tile-image" style="background-image: url('../assets/marine-pollution.jpg');">
             <div class="tile-overlay">
               <h3>Marine Pollution</h3>
               <p>Addressing plastic waste and chemical contamination in our oceans</p>
@@ -44,7 +44,7 @@
           </div>
         </a>
         <a href="content_ST2.html" class="tile">
-          <div class="tile-image" style="background-image: url('assets/coral-reefs.jpg');">
+          <div class="tile-image" style="background-image: url('../assets/coral-reefs.jpg');">
             <div class="tile-overlay">
               <h3>Coral Reef Protection</h3>
               <p>Preserving marine ecosystems and biodiversity</p>
@@ -52,7 +52,7 @@
           </div>
         </a>
         <a href="content_ST3.html" class="tile">
-          <div class="tile-image" style="background-image: url('assets/sustainable-fishing.jpg');">
+          <div class="tile-image" style="background-image: url('../assets/sustainable-fishing.jpg');">
             <div class="tile-overlay">
               <h3>Sustainable Fishing</h3>
               <p>Promoting responsible fishing practices and ocean management</p>
@@ -60,7 +60,7 @@
           </div>
         </a>
         <a href="content_ST4.html" class="tile">
-          <div class="tile-image" style="background-image: url('assets/climate-impact.jpg');">
+          <div class="tile-image" style="background-image: url('../assets/climate-impact.jpg');">
             <div class="tile-overlay">
               <h3>Climate Impact</h3>
               <p>Understanding and addressing climate change effects on marine life</p>
@@ -109,6 +109,15 @@
       fadeInOnScroll();
       window.addEventListener('scroll', fadeInOnScroll);
     });
+
+    window.addEventListener('scroll', function() {
+    const header = document.querySelector('.main-header');
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
   </script>
 </body>
 
