@@ -1,11 +1,4 @@
 /* VOLUNTEER PAGE SPECIFIC STYLES */
-
-body {
-    background: var(--background-image) no-repeat center center fixed;
-    background-size: cover;
-    height: 100vh;
-}
-
 /* Main Content */
 .volunteer-main {
     padding: 2rem;

@@ -20,6 +20,13 @@
   font-family: var(--body-font);
 }
 
+.common-body {
+  background: var(--background-image) no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 3rem;
+}
+
 
 /* Splash Screen Styles */
 #splash {

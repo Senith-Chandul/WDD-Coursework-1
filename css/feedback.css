@@ -1,7 +1,5 @@
 /* Feedback Page Specific Styles */
 .feedback-body {
-  background: url('../assets/background.jpg') no-repeat center center fixed;
-  background-size: cover;
   color: var(--white);
   text-align: center;
 }
