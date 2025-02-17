@@ -1,0 +1,99 @@
+/* VOLUNTEER PAGE SPECIFIC STYLES */
+
+body {
+    background: var(--background-image) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Main Content */
+.volunteer-main {
+    padding: 2rem;
+}
+
+/* Program Cards Section */
+.programs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.program-card {
+    background-color: var(--very-dark-blue);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+}
+
+.program-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.program-details {
+    padding: 1.5rem;
+    color: var(--light-blue);
+}
+
+.program-details h3 {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Reviews Section */
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.review-card {
+    background-color: var(--dark-blue);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.review-rating {
+    font-size: 1.5rem;
+    color: var(--bright-blue);
+}
+
+/* Feedback Form */
+.feedback-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--very-dark-blue);
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--light-blue);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid var(--medium-blue);
+    border-radius: 5px;
+    background-color: var(--light-blue);
+}
