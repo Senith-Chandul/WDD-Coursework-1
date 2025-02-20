@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/volunteer.css">
 </head>
+
 <body class="common-body">
   <header class="main-header">
     <nav>
@@ -28,53 +30,74 @@
       <h2 class="h2-heading">Volunteer Programs</h2>
       <div class="programs-container">
         <!-- Program Card 1 -->
-        <div class="program-card">
-          <div class="program-image" style="background-image: url('../assets/volunteer1.jpg');"></div>
+        <a href="#" class="program-card" style="background-image: url('../assets/volunteer1.jpg');">
           <div class="program-details">
             <h3>Beach Cleanup</h3>
             <p>Join us in cleaning up coastal areas to protect marine life from plastic pollution.</p>
             <p><strong>Location:</strong> Colombo, Sri Lanka</p>
             <p><strong>Duration:</strong> 2 weeks</p>
-            <button class="button">Learn More</button>
           </div>
-        </div>
+        </a>
 
         <!-- Program Card 2 -->
-        <div class="program-card">
-          <div class="program-image" style="background-image: url('../assets/volunteer2.jpg');"></div>
+        <a href="#" class="program-card" style="background-image: url('../assets/volunteer2.jpg');">
           <div class="program-details">
             <h3>Coral Reef Restoration</h3>
             <p>Help restore coral reefs and promote marine biodiversity.</p>
             <p><strong>Location:</strong> Galle, Sri Lanka</p>
             <p><strong>Duration:</strong> 4 weeks</p>
-            <button class="button">Learn More</button>
           </div>
-        </div>
+        </a>
 
         <!-- Program Card 3 -->
-        <div class="program-card">
-          <div class="program-image" style="background-image: url('../assets/volunteer3.jpg');"></div>
+        <a href="#" class="program-card" style="background-image: url('../assets/volunteer3.jpg');">
           <div class="program-details">
             <h3>Marine Wildlife Monitoring</h3>
             <p>Assist in monitoring and protecting endangered marine species.</p>
             <p><strong>Location:</strong> Trincomalee, Sri Lanka</p>
             <p><strong>Duration:</strong> 3 weeks</p>
-            <button class="button">Learn More</button>
           </div>
-        </div>
+        </a>
 
         <!-- Program Card 4 -->
-        <div class="program-card">
-          <div class="program-image" style="background-image: url('../assets/volunteer4.jpg');"></div>
+        <a href="#" class="program-card" style="background-image: url('../assets/volunteer4.jpg');">
           <div class="program-details">
             <h3>Sustainable Fishing Workshops</h3>
             <p>Educate local communities on sustainable fishing practices.</p>
             <p><strong>Location:</strong> Negombo, Sri Lanka</p>
             <p><strong>Duration:</strong> 1 week</p>
-            <button class="button">Learn More</button>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Feedback Form Section -->
+    <section class="feedback-form fade-in">
+      <h2 class="h2-heading">Share Your Feedback</h2>
+      <form action="#" method="post">
+        <div class="inline-form-group">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Email Address" required>
+          </div>
+          <div class="form-group">
+            <select id="rating" name="rating" required>
+              <option value="" disabled selected>Rating</option>
+              <option value="5">★★★★★</option>
+              <option value="4">★★★★☆</option>
+              <option value="3">★★★☆☆</option>
+              <option value="2">★★☆☆☆</option>
+              <option value="1">★☆☆☆☆</option>
+            </select>
           </div>
         </div>
-      </div>
+        <div class="form-group">
+          <textarea id="message" name="message" rows="5" placeholder="Your Feedback" required></textarea>
+        </div>
+        <button type="submit" class="button">Submit Feedback</button>
+      </form>
     </section>
 
     <!-- User Ratings and Reviews Section -->
@@ -84,54 +107,27 @@
         <!-- Review Card 1 -->
         <div class="review-card">
           <div class="review-rating">★★★★★</div>
-          <p class="review-text">"An amazing experience! The beach cleanup was well-organized, and I felt like I made a real difference."</p>
+          <p class="review-text">"An amazing experience! The beach cleanup was well-organized, and I felt like I made a
+            real difference."</p>
           <p class="review-author">- John Doe</p>
         </div>
 
         <!-- Review Card 2 -->
         <div class="review-card">
           <div class="review-rating">★★★★☆</div>
-          <p class="review-text">"The coral reef restoration program was eye-opening. Highly recommend it to anyone passionate about marine life."</p>
+          <p class="review-text">"The coral reef restoration program was eye-opening. Highly recommend it to anyone
+            passionate about marine life."</p>
           <p class="review-author">- Jane Smith</p>
         </div>
 
         <!-- Review Card 3 -->
         <div class="review-card">
           <div class="review-rating">★★★★★</div>
-          <p class="review-text">"I learned so much about sustainable fishing practices. The team was very supportive and knowledgeable."</p>
+          <p class="review-text">"I learned so much about sustainable fishing practices. The team was very supportive
+            and knowledgeable."</p>
           <p class="review-author">- Alex Brown</p>
         </div>
       </div>
-    </section>
-
-    <!-- Feedback Form Section -->
-    <section class="feedback-form fade-in">
-      <h2 class="h2-heading">Share Your Feedback</h2>
-      <form action="#" method="post">
-        <div class="form-group">
-          <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="rating">Rating</label>
-          <select id="rating" name="rating" required>
-            <option value="5">★★★★★</option>
-            <option value="4">★★★★☆</option>
-            <option value="3">★★★☆☆</option>
-            <option value="2">★★☆☆☆</option>
-            <option value="1">★☆☆☆☆</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="message">Your Feedback</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="button">Submit Feedback</button>
-      </form>
     </section>
   </main>
 
@@ -167,4 +163,5 @@
     });
   </script>
 </body>
+
 </html>

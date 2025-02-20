@@ -1,39 +1,67 @@
 /* VOLUNTEER PAGE SPECIFIC STYLES */
 /* Main Content */
 .volunteer-main {
+    text-align: center;
+}
+
+.volunteer-programs {
     padding: 2rem;
+    margin-bottom: 3rem;
+    justify-content: center;
+}
+
+.volunteer-programs h2 {
+    color: var(--light-blue);
+    margin-bottom: 2rem;
 }
 
 /* Program Cards Section */
 .programs-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .program-card {
-    background-color: var(--very-dark-blue);
+    background-size: cover;
+    background-position: center;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
     transition: transform 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 300px;
 }
 
 .program-card:hover {
     transform: translateY(-10px);
 }
 
-.program-image {
-    height: 200px;
-    background-size: cover;
-    background-position: center;
+.program-details {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--light-blue);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
-.program-details {
-    padding: 1.5rem;
-    color: var(--light-blue);
+.program-card:hover .program-details {
+    opacity: 1;
 }
 
 .program-details h3 {
@@ -64,29 +92,54 @@
 
 /* Feedback Form */
 .feedback-form {
-    max-width: 600px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: var(--very-dark-blue);
-    border-radius: 10px;
+    margin: 0;
+    padding: 2rem 5rem;
+    background-color: var(--light-blue);
+    border-radius: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.feedback-form h2 {
+    color: var(--medium-blue);
 }
 
 .form-group {
     margin-bottom: 1.5rem;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: var(--light-blue);
-}
-
 .form-group input,
 .form-group select,
 .form-group textarea {
+    margin-bottom: 1.25rem;
     width: 100%;
     padding: 0.8rem;
-    border: 2px solid var(--medium-blue);
-    border-radius: 5px;
+    border: 3px solid var(--medium-blue);
     background-color: var(--light-blue);
+    color: var(--medium-blue);
+    font-size: 1rem;
+}
+
+/* Change placeholder color */
+.form-group input::placeholder,
+.form-group select::placeholder,
+.form-group textarea::placeholder,
+.form-group select option {
+    color: var(--medium-blue);
+}
+
+/* Flexbox for inline form groups */
+.inline-form-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.feedback-form button {
+    margin-top: -1rem; 
+    background: transparent;
+}
+
+.inline-form-group .form-group {
+    flex: 1;
+    margin-bottom: 0; /* Remove bottom margin for inline groups */
 }
