@@ -71,6 +71,17 @@
 }
 
 /* Reviews Section */
+.user-reviews {
+    padding: 2rem;
+    padding-bottom: 5rem;
+    justify-content: center;
+}
+
+.user-reviews h2 {
+    color: var(--light-blue);
+    margin-bottom: 2rem;
+}
+
 .reviews-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -80,28 +91,40 @@
 }
 
 .review-card {
-    background-color: var(--dark-blue);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 1.5rem;
     border-radius: 10px;
+    color: var(--light-blue);
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scale(1.05);
 }
 
 .review-rating {
     font-size: 1.5rem;
-    color: var(--bright-blue);
+    color: #939ea7;
+}
+
+.review-author {
+    color: #939ea7;
 }
 
 /* Feedback Form */
 .feedback-form {
     margin: 0;
     padding: 2rem 5rem;
-    background-color: var(--light-blue);
+    background: linear-gradient(rgba(5, 25, 35, 0.7), rgba(5, 25, 35, 0.7));
     border-radius: 0;
     box-sizing: border-box;
     width: 100%;
 }
 
 .feedback-form h2 {
-    color: var(--medium-blue);
+    color: var(--light-blue);
 }
 
 .form-group {
@@ -114,9 +137,9 @@
     margin-bottom: 1.25rem;
     width: 100%;
     padding: 0.8rem;
-    border: 3px solid var(--medium-blue);
-    background-color: var(--light-blue);
-    color: var(--medium-blue);
+    border: 3px solid var(--light-blue);
+    background: transparent;
+    color: var(--light-blue);
     font-size: 1rem;
 }
 
@@ -125,7 +148,7 @@
 .form-group select::placeholder,
 .form-group textarea::placeholder,
 .form-group select option {
-    color: var(--medium-blue);
+    color: var(--light-blue);
 }
 
 /* Flexbox for inline form groups */
