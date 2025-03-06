@@ -159,7 +159,12 @@
   padding: 0.5rem;
   border-radius: 5px;
   border: 1px solid var(--light-blue);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--light-blue);
+}
+
+.contact-me input::placeholder,
+.contact-me textarea::placeholder {
   color: var(--light-blue);
 }
 

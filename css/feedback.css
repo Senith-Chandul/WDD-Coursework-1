@@ -1,6 +1,5 @@
 /* Feedback Page Specific Styles */
 .feedback-body {
-  color: var(--white);
   text-align: center;
 }
 
@@ -12,20 +11,16 @@
 .feedback-title {
   font-size: 4rem;
   color: var(--bright-blue);
-  text-shadow: 
-    -1px -1px 0 var(--white),  
-     1px -1px 0 var(--white),
-    -1px  1px 0 var(--white),
-     1px  1px 0 var(--white);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   margin-bottom: 2rem;
 }
 
 .feedback-form {
-  max-width: 600px;
+  max-width: 75%;
   margin: 0 auto;
   background-color: rgba(5, 25, 35, 0.8);
-  padding: 2rem;
+  padding: 4rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -38,7 +33,8 @@
 .form-group label {
   display: block;
   margin-bottom: 0.5rem;
-  color: var(--white);
+  color: var(--light-blue);
+  font-weight: 600;
 }
 
 .form-group input[type="text"],
@@ -47,9 +43,16 @@
   width: 100%;
   padding: 0.75rem;
   border-radius: 5px;
-  border: 1px solid var(--medium-blue);
-  background-color: var(--light-blue);
-  color: var(--very-dark-blue);
+  border: 2px solid var(--light-blue);
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--light-blue);
+  font-size: 0.9rem;
+}
+
+.form-group input[type="text"]::placeholder,
+.form-group input[type="email"]::placeholder,
+.form-group textarea::placeholder {
+  color: var(--light-blue);
 }
 
 .form-group textarea {
