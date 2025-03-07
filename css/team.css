@@ -12,10 +12,8 @@
 }
 
 .team-title {
-  font-size: 4rem;
-  color: var(--bright-blue);
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  font-size: 3rem;
+  color: var(--light-blue);
   margin-bottom: 2rem;
 }
 
@@ -33,9 +31,9 @@
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
-  transition: background-color 0.3s ease;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-bottom: 1rem;
 }
 
 .team-member:hover {
@@ -50,8 +48,10 @@
 }
 
 .team-member h3 {
+  font-size: 1.5rem;
   color: var(--very-dark-blue);
   padding: 1rem;
+  padding-bottom: 0.2rem;
   margin: 0;
 }
 
@@ -59,4 +59,9 @@
   color: var(--dark-blue);
   padding: 0 1rem 1rem;
   margin: 0;
+}
+
+#role {
+  font-size: 1.1rem;
+  font-weight: 600;
 }

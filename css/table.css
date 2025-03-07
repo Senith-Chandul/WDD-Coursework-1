@@ -1,0 +1,89 @@
+/* TABLE PAGE SPECIFIC STYLES */
+
+/* Main Content */
+.table-main {
+    padding: 5rem;
+    background: url('../assets/background.jpg') no-repeat center center fixed;
+    text-align: center;
+}
+
+.table-main h2 {
+    font-size: 3rem;
+    color: var(--light-blue);
+    margin-bottom: 2rem;
+}
+
+/* Table Container */
+.table-container {
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+/* Data Table */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--light-blue);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.data-table th,
+.data-table td {
+    padding: 0.8rem;
+    text-align: center;
+    border: 1px solid var(--medium-blue); /* Add border to table cells */
+}
+
+.data-table th {
+    background-color: var(--dark-blue);
+    color: var(--light-blue);
+    font-family: var(--heading-font);
+}
+
+.data-table td {
+    color: var(--very-dark-blue);
+}
+
+.data-table tr:nth-child(even) {
+    background-color: rgba(5, 82, 202, 0.05);
+}
+
+.data-table tr:hover {
+    background-color: rgba(0, 166, 251, 0.1);
+    transform: scale(1.01);
+    transition: all 0.3s ease;
+}
+
+/* Status Indicators */
+.status-indicator {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.positive {
+    background-color: rgba(22, 219, 101, 0.2);
+    color: #04471c;
+}
+
+.critical {
+    background-color: rgba(255, 69, 0, 0.2);
+    color: #8b0000;
+}
+
+/* Table Icons */
+.table-icon {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    color: var(--medium-blue);
+}
+
+/* Table Footer */
+.table-footer {
+    text-align: center;
+    margin-top: -1rem;
+    color: var(--light-blue);
+    font-size: 0.9rem;
+    margin-bottom: -2.5rem;
+}

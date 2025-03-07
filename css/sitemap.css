@@ -1,0 +1,134 @@
+/* SITEMAP PAGE SPECIFIC STYLES */
+
+.sitemap-main {
+    padding: 2rem;
+    background-color: var(--light-blue);
+    min-height: 100vh;
+}
+
+.sitemap-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    position: relative;
+    padding: 2rem 0;
+}
+
+/* Node Styling */
+.node {
+    background-color: var(--very-dark-blue);
+    color: var(--light-blue);
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    margin: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.node a {
+    color: var(--light-blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.node:hover {
+    transform: scale(1.05);
+    background-color: var(--dark-blue);
+}
+
+/* Hierarchy Levels */
+.level-1 {
+    display: flex;
+    justify-content: space-around;
+    margin: 4rem 0;
+    position: relative;
+}
+
+.level-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+.level-3 {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+/* Connector Lines */
+.node::after {
+    content: '';
+    position: absolute;
+    background-color: var(--medium-blue);
+    transition: all 0.3s ease;
+}
+
+.level-1 .node::after {
+    width: 2px;
+    height: 4rem;
+    bottom: -4rem;
+    left: 50%;
+}
+
+.level-2 .node::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 4rem;
+    top: -4rem;
+    left: 50%;
+    background-color: var(--medium-blue);
+}
+
+/* Special Node Types */
+.root-node {
+    background-color: var(--bright-blue);
+    width: 200px;
+    margin: 0 auto;
+}
+
+.root-node a {
+    color: var(--very-dark-blue);
+    font-weight: 700;
+}
+
+.sub-node {
+    background-color: var(--medium-blue);
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    margin: 0.5rem auto;
+    width: 80%;
+}
+
+.content-node {
+    background-color: var(--dark-blue);
+    width: 200px;
+}
+
+.support-node {
+    background-color: rgba(5, 82, 202, 0.8);
+    width: 180px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .level-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .level-2, .level-3 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .node::after,
+    .node::before {
+        display: none;
+    }
+}
