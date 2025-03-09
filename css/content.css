@@ -1,0 +1,186 @@
+/* Content Page Specific Styles */
+.content-body {
+  background: url('../assets/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: var(--light-blue);
+  text-align: center;
+}
+
+.content-main {
+  padding: 1rem;
+  min-height: 70vh;
+}
+
+/* Main Heading */
+.content-title {
+  font-size: 3rem;
+  color: var(--light-blue);
+  margin-bottom: 1rem; /* Reduced margin-bottom to reduce space */
+}
+
+/* Full-Width Rectangle for Images */
+.full-width-rectangle {
+  width: 100%; /* Ensure it takes up the full width of its container */
+  max-width: 75%; /* Limit the maximum width */
+  background-color: rgba(5, 25, 35, 0.8);
+  padding: 2rem 0; /* Add padding to create space inside the rectangle */
+  margin: 1rem auto; /* Center the rectangle horizontally */
+  border-radius: 10px;
+}
+
+/* Photo Rectangles Section */
+.photo-rectangles {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 75%; /* Match the width of the content sections */
+  margin: 0 auto; /* Center the photo rectangles */
+}
+
+.photo-rectangle {
+  flex: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: scale 0.3s ease;
+}
+
+.photo-rectangle:hover {
+  scale: 1.05;
+}
+
+.photo-rectangle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure images fit nicely */
+}
+
+/* Horizontal Navigation Bar */
+.content-navigation {
+  background-color: rgba(5, 25, 35, 0.8);
+  padding: 1rem;
+  margin: 2rem auto;
+  max-width: 75%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.content-navigation ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.content-navigation ul li {
+  margin: 0;
+}
+
+.content-navigation ul li a {
+  color: var(--light-blue);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.content-navigation ul li a:hover {
+  color: var(--bright-blue);
+}
+
+/* Content Sections */
+.content-section {
+  background-color: rgba(5, 25, 35, 0.8);
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 75%; /* Match the width of the feedback form */
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  color: var(--light-blue);
+  margin-bottom: 1rem;
+}
+
+.content-section h3 {
+  font-size: 1.5rem;
+  color: var(--light-blue);
+  margin-bottom: 1rem;
+}
+
+.content-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--light-blue);
+  margin-bottom: 1rem;
+}
+
+/* Styled List for Key Points */
+.styled-list {
+  list-style-type: disc;
+  margin-left: 2rem;
+  color: var(--light-blue);
+}
+
+.styled-list li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.styled-list li strong {
+  color: var(--bright-blue); /* Highlight key terms */
+}
+
+/* Threats Section Images */
+.content-gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.gallery-images {
+  flex: 1;
+  text-align: center;
+}
+
+.content-image {
+  width: 100%;
+  height: 200px; /* Adjust height as needed */
+  object-fit: cover; /* Ensure images fit nicely */
+  border-radius: 10px; /* Optional: Add border-radius to the images */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for better visual appeal */
+}
+
+.image-caption {
+  font-size: 0.9rem;
+  color: var(--light-blue);
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+/* Go to Top Button */
+.go-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--bright-blue);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.go-to-top:hover {
+  background-color: var(--medium-blue);
+}

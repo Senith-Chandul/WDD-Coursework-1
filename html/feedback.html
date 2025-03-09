@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feedback - Protect Our Oceans</title>
+  <title>Feedback - Beneath the Waves</title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/feedback.css">
 </head>
@@ -23,73 +23,299 @@
   </header>
 
   <main class="feedback-main">
-    <h1 class="feedback-title h2-heading">Feedback</h1>
+    <h1 class="feedback-title h2-heading">Drop Us A Feedback</h1>
     
-    <form class="feedback-form">
-      <div class="form-group">
-        <label for="name">Enter Your Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
-      </div>
-
-      <div class="form-group">
-        <label for="email">Enter Your Email:</label>
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
-      </div>
-
-      <div class="form-group">
-        <label>Was This Your First Time Visiting?</label>
-        <div class="radio-group">
-          <label><input type="radio" name="first-time" value="yes" required> Yes</label>
-          <label><input type="radio" name="first-time" value="no"> No</label>
+    <!-- Feedback Form -->
+    <form class="feedback-form" id="feedbackForm">
+      <fieldset>
+        <label class="detail-type">Personal Details</label>
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your Name">
         </div>
-      </div>
 
-      <div class="form-group">
-        <label>Was This Website Informative And Easy To Navigate Through?</label>
-        <div class="radio-group">
-          <label><input type="radio" name="navigate" value="yes" required> Yes</label>
-          <label><input type="radio" name="navigate" value="no"> No</label>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="Your Email">
         </div>
-      </div>
 
-      <div class="form-group">
-        <label for="improvements">If "No", suggest any improvements for the future:</label>
-        <textarea id="improvements" name="improvements" placeholder="Add your message here"></textarea>
-      </div>
-
-      <div class="form-group">
-        <label>How satisfied are you with Our Services? Choose from 0 to 10, with 1 being "Not satisfied at all." and 10 being "Extremely satisfied"</label>
-        <div class="rating">
-          <span>1</span>
-          <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" step="1" required>
-          <span>10</span>
+        <div class="form-group">
+          <label for="tel">Telephone Number:</label>
+          <input type="tel" id="tel" name="tel" placeholder="Your Phone Number">
         </div>
-      </div>
 
-      <div class="form-group">
-        <label>Would You Recommend our services?</label>
-        <div class="radio-group">
-          <label><input type="radio" name="recommend" value="yes" required> Yes</label>
-          <label><input type="radio" name="recommend" value="no"> No</label>
+        <div class="form-group">
+          <label for="address">Address (optional):</label>
+          <textarea id="address" name="address" placeholder="Your Address" maxlength="200"></textarea>
         </div>
-      </div>
+      </fieldset>
 
-      <div class="form-group">
-        <label for="questions">If "No", do you have any additional questions or requests?</label>
-        <textarea id="questions" name="questions" placeholder="Add your message here"></textarea>
-      </div>
+      <fieldset>
+        <label class="detail-type">Feedback Details</label>
+        <div class="form-group">
+          <label>Was This Your First Time Visiting?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="first-time" value="yes"> Yes</label>
+            <label><input type="radio" name="first-time" value="no"> No</label>
+          </div>
+        </div>
+
+        <!-- Dropdown for "How did you first hear about our website?" -->
+        <div class="form-group">
+          <label for="hear-about-us">How did you first hear about our website?</label>
+          <select id="hear-about-us" name="hear-about-us">
+            <option value="" disabled selected>Select an option</option>
+            <option value="social-media">Social Media (Facebook, Instagram, Twitter, etc.)</option>
+            <option value="search-engine">Search Engine (Google, Bing, etc.)</option>
+            <option value="word-of-mouth">Word of Mouth (Friends, Family, Colleagues)</option>
+            <option value="news-article">News Article or Blog Post</option>
+            <option value="email-newsletter">Email Newsletter</option>
+            <option value="online-ad">Online Advertisement</option>
+            <option value="event">Event or Conference</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Was This Website Informative And Easy To Navigate Through?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="navigate" value="yes"> Yes</label>
+            <label><input type="radio" name="navigate" value="no"> No</label>
+          </div>
+        </div>
+
+        <!-- Multi-Select List for Feature Improvements -->
+        <div class="form-group">
+          <label for="improvements">Which features would you like to see improved or added to the website?</label>
+          <select id="improvements" name="improvements" multiple>
+            <option value="faster-load-time">Faster Load Time</option>
+            <option value="mobile-responsiveness">Mobile Responsiveness</option>
+            <option value="interactive-elements">More Interactive Elements</option>
+            <option value="improved-navigation">Improved Navigation</option>
+            <option value="visual-design">Better Visual Design</option>
+            <option value="accessibility">Improved Accessibility</option>
+            <option value="content-updates">More Frequent Content Updates</option>
+            <option value="user-forum">User Forum or Community Section</option>
+            <option value="search-functionality">Improved Search Functionality</option>
+            <option value="dark-mode">Dark Mode Option</option>
+            <option value="language-support">Multi-Language Support</option>
+            <option value="performance-optimization">Performance Optimization</option>
+            <option value="security-features">Enhanced Security Features</option>
+            <option value="customization">More Customization Options</option>
+            <option value="feedback-system">Better Feedback System</option>
+            <option value="tutorials">Interactive Tutorials</option>
+            <option value="analytics">User Analytics Dashboard</option>
+          </select>
+        </div>
+
+        <!-- Checkbox for Motivation -->
+        <div class="form-group">
+          <label>What motivated you to visit our website today? (Select all that apply)</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="motivation" value="learn-more"> To learn more about life under water</label>
+            <label><input type="checkbox" name="motivation" value="volunteer"> To find volunteer opportunities</label>
+            <label><input type="checkbox" name="motivation" value="impact-data"> To check environmental impact data</label>
+            <label><input type="checkbox" name="motivation" value="community"> To connect with the community</label>
+            <label><input type="checkbox" name="motivation" value="browsing"> Just browsing</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>How satisfied are you with Our Services? Choose from 0 to 10, with 1 being "Not satisfied at all." and 10 being "Extremely satisfied"</label>
+          <div class="rating">
+            <span>1</span>
+            <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" step="1">
+            <span>10</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Would You Recommend our services?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="recommend" value="yes"> Yes</label>
+            <label><input type="radio" name="recommend" value="no"> No</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="questions">If "No", do you have any additional questions or requests? (optional)</label>
+          <textarea id="questions" name="questions" placeholder="Add your message here" maxlength="500"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Preferred Date for Follow-up:</label>
+          <input type="date" id="date" name="date">
+        </div>
+
+        <div class="form-group">
+          <label for="file">Upload Attachment (optional):</label>
+          <input type="file" id="file" name="file">
+        </div>
+
+        <div class="form-group">
+          <label>Rate Your Experience:</label>
+          <div class="emoji-rating">
+            <span data-value="1">😠</span>
+            <span data-value="2">😕</span>
+            <span data-value="3">😐</span>
+            <span data-value="4">😊</span>
+            <span data-value="5">😍</span>
+          </div>
+        </div>
+      </fieldset>
 
       <button type="submit" class="submit-button">Send Feedback</button>
     </form>
+    <!-- End of Feedback Form -->
   </main>
 
   <footer class="main-footer">
     <p>&copy; 2025 Life Below Water Initiative</p>
     <div class="editor-links">
       <a href="pageEditor_ST1.html"> Senith </a>
-      <a href="pageEditor_ST2.html"> Hansana </a>
-      <a href="pageEditor_ST3.html"> Thisara </a>
+      <a href="pageEditor_ST2.html"> Thisara </a>
+      <a href="pageEditor_ST3.html"> Hansana </a>
     </div>
   </footer>
+
+  <script>
+    // Highlight the selected emoji for "Rate Your Experience"
+    const emojiSpans = document.querySelectorAll('.emoji-rating span');
+
+    emojiSpans.forEach(emoji => {
+      emoji.addEventListener('click', function() {
+        // Remove the highlight from all emojis
+        emojiSpans.forEach(e => e.classList.remove('selected-emoji'));
+
+        // Add the highlight to the clicked emoji
+        this.classList.add('selected-emoji');
+      });
+    });
+
+    // Function to highlight selected options in the multi-select dropdown
+    const improvementsSelect = document.getElementById('improvements');
+    improvementsSelect.addEventListener('change', function() {
+      const selectedOptions = Array.from(this.selectedOptions);
+      if (selectedOptions.length > 0) {
+        this.style.borderColor = ''; // Reset border color if valid
+      } else {
+        this.style.borderColor = '#ff4444'; // Highlight in red if no option is selected
+      }
+    });
+
+    // Form validation
+    document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+      let isValid = true;
+
+      // Validate Full Name
+      const name = document.getElementById('name');
+      if (!name.value.trim()) {
+        isValid = false;
+        name.style.borderColor = '#ff4444'; // Highlight the field in red
+        alert('Please enter your full name.');
+      } else {
+        name.style.borderColor = ''; // Reset the border color
+      }
+
+      // Validate Email Address
+      const email = document.getElementById('email');
+      if (!email.value.trim()) {
+        isValid = false;
+        email.style.borderColor = '#ff4444'; // Highlight the field in red
+        alert('Please enter your email address.');
+      } else {
+        email.style.borderColor = ''; // Reset the border color
+      }
+
+      // Validate Telephone Number
+      const tel = document.getElementById('tel');
+      if (!tel.value.trim()) {
+        isValid = false;
+        tel.style.borderColor = '#ff4444'; // Highlight the field in red
+        alert('Please enter your telephone number.');
+      } else {
+        tel.style.borderColor = ''; // Reset the border color
+      }
+
+      // Validate "Was This Your First Time Visiting?"
+      const firstTime = document.querySelector('input[name="first-time"]:checked');
+      if (!firstTime) {
+        isValid = false;
+        alert('Please select whether this is your first time visiting.');
+      }
+
+      // Validate "How did you first hear about our website?"
+      const hearAboutUs = document.getElementById('hear-about-us');
+      if (hearAboutUs.value === "") {
+        isValid = false;
+        hearAboutUs.style.borderColor = '#ff4444'; // Highlight the field in red
+        alert('Please select how you first heard about our website.');
+      } else {
+        hearAboutUs.style.borderColor = ''; // Reset the border color
+      }
+
+      // Validate "Was This Website Informative And Easy To Navigate Through?"
+      const navigate = document.querySelector('input[name="navigate"]:checked');
+      if (!navigate) {
+        isValid = false;
+        alert('Please select whether the website was informative and easy to navigate.');
+      }
+
+      // Validate "Which features would you like to see improved or added to the website?"
+      const improvements = document.getElementById('improvements');
+      if (improvements.selectedOptions.length === 0) {
+        isValid = false;
+        improvements.style.borderColor = '#ff4444'; // Highlight the field in red
+        alert('Please select at least one feature you would like to see improved or added.');
+      } else {
+        improvements.style.borderColor = ''; // Reset the border color
+      }
+
+      // Validate "What motivated you to visit our website today?"
+      const motivations = document.querySelectorAll('input[name="motivation"]:checked');
+      if (motivations.length === 0) {
+        isValid = false;
+        alert('Please select at least one motivation for visiting our website.');
+      }
+
+      // Validate "How satisfied are you with Our Services?"
+      const satisfaction = document.getElementById('satisfaction');
+      if (!satisfaction.value.trim()) {
+        isValid = false;
+        satisfaction.style.borderColor = '#ff4444'; // Highlight the field in red
+        alert('Please rate your satisfaction with our services.');
+      } else {
+        satisfaction.style.borderColor = ''; // Reset the border color
+      }
+
+      // Validate "Would You Recommend our services?"
+      const recommend = document.querySelector('input[name="recommend"]:checked');
+      if (!recommend) {
+        isValid = false;
+        alert('Please select whether you would recommend our services.');
+      }
+
+      // Validate "Preferred Date for Follow-up"
+      const followUpDate = document.getElementById('date');
+      if (!followUpDate.value.trim()) {
+        isValid = false;
+        followUpDate.style.borderColor = '#ff4444'; // Highlight the field in red
+        alert('Please select a preferred date for follow-up.');
+      } else {
+        followUpDate.style.borderColor = ''; // Reset the border color
+      }
+
+      // Validate "Rate Your Experience"
+      const selectedEmoji = document.querySelector('.emoji-rating span.selected-emoji');
+      if (!selectedEmoji) {
+        isValid = false;
+        alert('Please rate your experience by selecting an emoji.');
+      }
+
+      // Prevent form submission if validation fails
+      if (!isValid) {
+        event.preventDefault(); // Prevent form submission
+      }
+    });
+  </script>
 </body>
 </html>
