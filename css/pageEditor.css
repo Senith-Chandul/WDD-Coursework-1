@@ -1,0 +1,211 @@
+/* Content Page Specific Styles */
+.content-body {
+  background: url('../assets/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: var(--light-blue);
+  text-align: center;
+}
+
+.pageeditor-main {
+  padding: 2rem;
+  min-height: 70vh;
+}
+
+/* Main Heading */
+.pageeditor-title {
+  font-size: 3rem;
+  color: var(--light-blue);
+  margin-bottom: 1rem; /* Reduced margin-bottom to reduce space */
+}
+
+/* Name role and work */
+.pageeditor-role {
+  background-color: rgba(5, 25, 35, 0.8);
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+  margin: 1rem auto;
+  max-width: 75%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Content Sections */
+.content-section {
+  background-color: rgba(5, 25, 35, 0.8);
+  padding: 2rem 4rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 75%;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  color: var(--light-blue);
+  margin-bottom: 1rem;
+  text-align: center
+}
+
+.content-section h3 {
+  font-size: 1.5rem;
+  color: var(--light-blue);
+  margin-bottom: 1rem;
+}
+
+
+.content-section h4 {
+  font-size: 1.32rem; /* Adjust the size as needed */
+  color: var(--light-blue); /* Use the same color as other headings for consistency */
+  margin-bottom: 0.75rem; /* Add some spacing below the heading */
+  font-weight: 600; /* Make it slightly bold */
+}
+
+.content-section h5 {
+  font-size: 1.15rem;
+  color: var(--light-blue);
+  margin-bottom: 1rem;
+}
+
+.content-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--light-blue);
+  margin-bottom: 1rem;
+}
+
+/* Go to Feedback Page Button Styles */
+.goto-page-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--bright-blue);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.goto-feedback-button:hover {
+  background-color: var(--medium-blue);
+}
+
+/* Go to Team Page Button Styles */
+.goto-team-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--bright-blue);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.goto-team-button:hover {
+  background-color: var(--medium-blue);
+}
+
+/* Go to Content Page Button Styles */
+.goto-content-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--bright-blue);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.goto-content-button:hover {
+  background-color: var(--medium-blue);
+}
+
+/* Go to Profile Page Button Styles */
+.goto-profile-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--bright-blue);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.goto-profile-button:hover {
+  background-color: var(--medium-blue);
+}
+
+
+
+/* Styled List for Key Points */
+.styled-list {
+  list-style-type: disc;
+  margin-left: 2rem;
+  color: var(--light-blue);
+}
+
+.styled-list li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+.styled-list li strong {
+  color: var(--bright-blue); /* Highlight key terms */
+  font-weight: bold;
+}
+
+/* Threats Section Images */
+.threats-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.threat-image {
+  flex: 1;
+  text-align: center;
+}
+
+.threat-image img {
+  width: 100%;
+  height: 200px; /* Adjust height as needed */
+  object-fit: cover; /* Ensure images fit nicely */
+  border-radius: 10px; /* Optional: Add border-radius to the images */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for better visual appeal */
+}
+
+.image-caption {
+  font-size: 0.9rem;
+  color: var(--light-blue);
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+/* Practices Section Images */
+.practices-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.practice-image {
+  flex: 1;
+  text-align: center;
+}
+
+.practice-image img {
+  width: 100%;
+  height: 200px; /* Adjust height as needed */
+  object-fit: cover; /* Ensure images fit nicely */
+  border-radius: 10px; /* Optional: Add border-radius to the images */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for better visual appeal */
+}

@@ -95,7 +95,8 @@
 /* Content Sections */
 .content-section {
   background-color: rgba(5, 25, 35, 0.8);
-  padding: 2rem;
+  padding: 4rem;
+  padding-bottom: 3rem;
   border-radius: 10px;
   margin: 2rem auto;
   max-width: 75%; /* Match the width of the feedback form */

@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Editor Page of student 3 - Beneath the Waves</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pageEditor.css">
+</head>
+
+<body class="content-body common-body">
+  <header class="main-header">
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="table.html">Impact Data</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+        <li><a href="team.html">Team</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pageeditor-main">
+    <h1 class="pageeditor-title h2-heading">Hansana's - Editor's Page</h1>
+
+    <!-- Name role and work -->
+    <div class="pageeditor-role">
+      <h2>Hansana</h2>
+      <p>Role: Student 3</p>
+      <p>Designed and implemented pages: Feedback, Team, and Profile</p>
+    </div>
+
+    <!-- Feedback Page Content -->
+    <section class="content-section">
+      <h2>Feedback Page</h2>
+      <hr>
+      <hr>
+      <h3>Introduction:</h3>
+      <p>
+        The <b>Feedback Page</b> is designed to collect user opinions and suggestions to improve the "Beneath the Waves"
+        website. It features a user-friendly form with fields for personal details, feedback, and ratings, including
+        interactive elements like emoji ratings and dropdown menus. Built with <b>HTML</b> for structure and <b>CSS</b>
+        for styling, the page ensures accessibility and responsiveness, making it easy for users to share their thoughts
+        and help enhance the platform.
+      </p>
+      <hr>
+
+      <h3>Technical Description</h3>
+      <h4>HTML Techniques:</h4>
+      <p>
+        The `feedback.html` page is structured using semantic HTML tags to ensure clarity and accessibility. The
+        &lt;form&gt; element is used to create a feedback form, with &lt;fieldset&gt; and &lt;legend&gt; tags to group
+        related form fields and provide context. Input fields such as &lt;input&gt;, &lt;textarea&gt;, and
+        &lt;select&gt; are used to collect user data. The &lt;label&gt; tags are associated with each input for better
+        accessibility. The form includes various input types like text, email, tel, date, and file, along with radio
+        buttons and checkboxes for multiple-choice questions. The &lt;span&gt; tags are used to display error messages
+        for invalid inputs.
+
+      </p>
+
+      <h4>CSS Techniques:</h4>
+      <p>
+        The `feedback.css` file styles the feedback form to create a visually appealing and user-friendly interface. The
+        `.feedback-form` class centers the form and applies a semi-transparent background with rounded corners and a
+        shadow effect. The `fieldset` and `legend` elements are styled with borders and colors to differentiate
+        sections. Input fields and textareas are styled uniformly with padding, borders, and background colors to
+        maintain consistency. The `.radio-group` and `.checkbox-group` classes use Flexbox to align options horizontally
+        and vertically, respectively. The `.emoji-rating` class uses Flexbox to display emojis in a row, with hover
+        effects to enhance interactivity. Error messages are styled with red borders and text to indicate invalid
+        inputs. The `.submit-button` class styles the submit button with a background color transition on hover for a
+        smooth visual effect.
+      </p>
+
+      <h4>Purpose and Logic:</h4>
+      <p>
+        The HTML structure ensures the form is accessible and easy to navigate, while the CSS styling enhances the user
+        experience with a cohesive design and interactive elements. The use of semantic tags and proper labeling
+        improves accessibility, and the styling choices create a modern, engaging interface that encourages user
+        interaction.
+      </p>
+
+
+      <h4>Key HTML Tags and CSS Properties:</h4>
+      <h5>1. HTML Tags </h5>
+
+      <ul class="styled-list">
+        <li>&lt;form&gt;, &lt;fieldset&gt;, &lt;legend&gt;: Form structure and grouping.</li>
+        <li>&lt;input&gt;, &lt;textarea&gt;, &lt;select&gt;: Form inputs.</li>
+        <li>&lt;label&gt;: Labels for form fields.</li>
+        <li>&lt;span&gt;: Emojis for rating.</li>
+      </ul>
+
+      <h5>2. CSS Properties: </h5>
+
+      <ul class="styled-list">
+        <li>display: flex;: Aligns radio buttons, checkboxes, and emojis.</li>
+        <li>background-color: rgba();: Semi-transparent background for the form.</li>
+        <li>border-radius: 10px;: Rounded corners for form sections. </li>
+        <li>transform: scale();: Hover effects for emojis.</li>
+        <li>transition: background-color 0.3s ease;: Smooth hover effect for buttons.</li>
+
+
+      </ul>
+      <hr>
+
+      <h3>Challenges and Lessons Learned:</h3>
+      <p>
+        During the implementation of the feedback form, one challenge was ensuring proper form validation to prevent
+        incomplete submissions. This was addressed using JavaScript validation, which highlights missing fields and
+        provides alerts. Another challenge was improving accessibility, which was resolved by adding &lt;label&gt; tags
+        for all input fields. These experiences reinforced the importance of user-friendly and error-proof form design.
+      </p>
+      <hr>
+      <h3>Accessibility:</h3>
+      <p>
+        The feedback page follows accessibility best practices by using semantic HTML elements like &lt;fieldset&gt;,
+        &lt;legend&gt;, and &lt;label&gt; to improve screen reader compatibility. The form includes required attributes
+        to ensure users complete necessary fields, and radio buttons, checkboxes, and dropdowns are clearly labeled for
+        ease of navigation. Additionally, contrast and spacing considerations help users with visual impairments.
+
+      </p>
+      <hr>
+
+      <h3>Compliance:</h3>
+      <p>
+        The page aligns with web accessibility and usability standards by following Janet regulations for web
+        publication. It ensures proper structuring of content, clear labeling of form fields, and the use of valid HTML5
+        elements. Input validation prevents incorrect data submissions, and privacy considerations are maintained by
+        keeping user data collection minimal and relevant.
+      </p>
+      <hr>
+
+      <h3>References:</h3>
+
+      <p>
+        1. W3C (n.d.) Web Content Accessibility Guidelines (WCAG). Available at: <a href="https://www.w3.org/WAI/"
+          target="_blank">https://www.w3.org/WAI/</a> (Accessed: 6 Mar. 2025).
+      </p>
+
+      <p>
+        2. Mozilla Developer Network (MDN) (n.d.) Form validation in HTML. Available at: <a
+          href="https://developer.mozilla.org/" target="_blank">https://developer.mozilla.org/</a> (Accessed: 6 Mar.
+        2025).
+      </p>
+
+      <p>
+        3. IIT Web Development Course Materials. (2023). Lecture Notes: Responsive Web Design. (Accessed: 6 Mar. 2025).
+      </p>
+
+
+
+
+      <!-- Go to Feedback Page Button -->
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="feedback.html" class="goto-page-button">Go to Feedback Page</a>
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Team Page Content -->
+    <section class="content-section">
+      <h2>Team Page</h2>
+      <hr>
+      <hr>
+      <h3>Introduction:</h3>
+      <p>
+        The <b>Team Page</b> showcases the members of the "Beneath the Waves" initiative, highlighting their roles and
+        contributions to the project. Each team member is presented in a visually appealing card layout, featuring their
+        photo, name, role, and a brief description of the pages they designed and implemented. The page uses a
+        responsive grid layout to ensure it looks great on all devices, with hover effects that add interactivity. The
+        design is clean and modern, with a focus on accessibility and user engagement, making it easy for visitors to
+        learn about the team and navigate to individual editor pages for more details.
+      </p>
+      <hr>
+
+      <h3>Technical Description</h3>
+      <h4>HTML Techniques:</h4>
+      <h5>1. Semantic Structure: <h5>
+
+          <ul class="styled-list">
+            <li>The page uses semantic HTML tags like &lt;header&gt;, &lt;main&gt;, and &lt;footer&gt; to structure the
+              content logically. This improves accessibility and SEO.</li>
+            <li>The &lt;nav&gt; element is used for the navigation bar, which contains links to other pages on the
+              website.</li>
+          </ul>
+
+          <h5>2. Grid Layout for Team Members: <h5>
+
+              <ul class="styled-list">
+                <li>The team members are displayed in a grid layout using the &lt;div class="team-members"&gt;
+                  container. Each team member is represented by an &lt;a&gt; tag, which links to their respective
+                  editor's page.</li>
+                <li>The grid layout is achieved using CSS Grid (display: grid;), which allows for responsive and
+                  flexible positioning of team members.</li>
+              </ul>
+
+              <h5>3. Image Backgrounds: <h5>
+
+                  <ul class="styled-list">
+                    <li>Each team member's image is set as a background image using inline CSS (style="background-image:
+                      url('../assets/member3.jpg');"). This allows for easy customization and ensures the images are
+                      responsive.</li>
+                  </ul>
+
+                  <h5>4. Accessibility: <h5>
+
+                      <ul class="styled-list">
+                        <li>The &lt;a&gt; tags for team members include descriptive text (name, role, and
+                          responsibilities) to ensure screen readers can interpret the content correctly.</li>
+                        <li>The alt attribute is not used here since the images are background images, but the text
+                          content inside the &lt;a&gt; tags provides sufficient context.</li>
+                      </ul>
+
+                      <h4>Css Techniques:</h4>
+                      <h5>1. Responsive Grid Layout: <h5>
+
+                          <ul class="styled-list">
+                            <li>The .team-members class uses grid-template-columns: repeat(auto-fit, minmax(250px,
+                              1fr)); to create a responsive grid. This ensures that the team members are displayed in a
+                              flexible layout that adjusts based on the screen size.</li>
+                            <li>The gap: 2rem; property adds spacing between grid items, improving readability and
+                              visual appeal.</li>
+                          </ul>
+
+                          <h5>2. Hover Effects: <h5>
+
+                              <ul class="styled-list">
+                                <li>The .team-member:hover class applies a transform (transform: translateY(-10px);) and
+                                  changes the background color (background-color: var(--bright-blue);) when a user
+                                  hovers over a team member. This provides visual feedback and enhances interactivity.
+                                </li>
+                              </ul>
+
+                              <h5>3. Image Styling: <h5>
+
+                                  <ul class="styled-list">
+                                    <li>The .member-image class sets the height of the image container to 400px and uses
+                                      background-size: cover; and background-position: center; to ensure the images are
+                                      displayed correctly and maintain their aspect ratio.</li>
+                                  </ul>
+
+                                  <h5>4. Typography and Colors: <h5>
+
+                                      <ul class="styled-list">
+                                        <li>The .team-member h3 and .team-member p classes are used to style the text
+                                          inside each team member card. The color property is used to ensure the text
+                                          contrasts well with the background.</li>
+                                        <li>The #role selector is used to style the role description with a larger font
+                                          size (font-size: 1.1rem;) and bold text (font-weight: 600;).</li>
+                                      </ul>
+
+                                      <h5>5. Box Shadows and Borders: <h5>
+
+                                          <ul class="styled-list">
+                                            <li>The .team-member class uses box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); to
+                                              add a subtle shadow effect, giving the cards a raised appearance.</li>
+                                            <li>The border-radius: 10px; property rounds the corners of the team member
+                                              cards, making them visually appealing.</li>
+                                          </ul>
+
+                                          <h4>Purpose and Logic:</h4>
+
+                                          <ul class="styled-list">
+                                            <li><strong>Responsive Design</strong> – The grid layout ensures that the
+                                              team members are displayed in a flexible and responsive manner, adapting
+                                              to different screen sizes. This is crucial for providing a good user
+                                              experience on both desktop and mobile devices.</li>
+                                            <li><strong>Interactivity</strong> – The hover effects on the team member
+                                              cards provide visual feedback, making the page more engaging and
+                                              interactive.</li>
+                                            <li><strong>Accessibility</strong> – The use of semantic HTML and
+                                              descriptive text ensures that the page is accessible to all users,
+                                              including those using screen readers.</li>
+                                            <li><strong>Visual Appeal</strong> – The combination of box shadows, rounded
+                                              corners, and hover effects creates a modern and visually appealing design
+                                              that aligns with the overall theme of the website.</li>
+                                          </ul>
+
+
+                                          <h4>Key HTML Tags and CSS Properties:</h4>
+                                          <h5>1. HTML Tags </h5>
+
+                                          <ul class="styled-list">
+                                            <li>&lt;header&gt;, &lt;main&gt;, &lt;footer&gt;: Semantic structure</li>
+                                            <li>&lt;nav&gt;: Navigation bar.</li>
+                                            <li>&lt;a&gt;: Links to team member editor pages.</li>
+                                            <li>&lt;div&gt;: Container for team members and images.</li>
+                                            <li>&lt;h3&gt;, &lt;p&gt;: Text content for team member details.</li>
+                                          </ul>
+
+                                          <h5>2. CSS Properties: </h5>
+
+                                          <ul class="styled-list">
+                                            <li>display: grid;: Creates a grid layout for team members</li>
+                                            <li>grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));: Responsive
+                                              grid columns.</li>
+                                            <li>background-image: url();: Sets background images for team members. </li>
+                                            <li>transform: translateY();: Adds hover effect.</li>
+                                            <li>box-shadow: 0 4px 8px rgba();: Adds shadow to team member cards.</li>
+                                            <li>border-radius: 10px;: Rounds the corners of the cards.</li>
+
+
+                                          </ul>
+
+                                          <h3>Challenges and Lessons Learned:</h3>
+                                          <p>
+                                            One challenge encountered was ensuring consistent styling across multiple
+                                            pages while integrating different designs by team members. This was resolved
+                                            by creating a common CSS file (style.css) to standardize fonts, colors, and
+                                            layout structure. Additionally, linking separate CSS files (team.css)
+                                            allowed for customization without affecting other pages. Another challenge
+                                            was maintaining smooth navigation, which was addressed by implementing a
+                                            clear and structured navigation bar across all pages.
+
+                                          </P>
+                                          <hr>
+
+                                          <h3>Accessibility:</h3>
+                                          <p>
+                                            The Team page follows accessibility principles by using semantic HTML
+                                            elements (&lt;header&gt;, &lt;main&gt;, &lt;footer&gt;) for better screen
+                                            reader support. Images are used as backgrounds for visual aesthetics, but
+                                            alternative text (alt) should be added to enhance accessibility. The
+                                            navigation bar provides clear labels for each section, and the text is
+                                            structured with appropriate headings (&lt;h1&gt;, &lt;h3&gt;) to improve
+                                            readability.
+
+                                          </P>
+                                          <hr>
+
+                                          <h3>Compliance:</h3>
+                                          <p>
+                                            The Team page complies with Janet regulations by ensuring proper navigation,
+                                            content clarity, and structure. The page follows web publishing standards by
+                                            maintaining clear labeling of team roles, ensuring structured hyperlinks,
+                                            and keeping an organized footer with relevant editor links. Additionally,
+                                            the navigation bar provides logical, accessible, and user-friendly browsing,
+                                            which aligns with compliance guidelines.
+
+                                          </P>
+                                          <hr>
+
+                                          <h3>References:</h3>
+
+                                          <p>
+                                            1. W3C (n.d.) Web Content Accessibility Guidelines (WCAG). Available at: <a
+                                              href="https://www.w3.org/WAI/" target="_blank">https://www.w3.org/WAI/</a>
+                                            (Accessed: 6 Mar. 2025).
+                                          </p>
+
+                                          <p>
+                                            2. Mozilla Developer Network (MDN) (n.d.) Form validation in HTML. Available
+                                            at: <a href="https://developer.mozilla.org/"
+                                              target="_blank">https://developer.mozilla.org/</a> (Accessed: 6 Mar.
+                                            2025).
+                                          </p>
+
+                                          <p>
+                                            3. IIT Web Development Course Materials. (2023). Lecture Notes:
+                                            Responsive Web Design. (Accessed: 6 Mar. 2025).
+                                          </p>
+
+
+
+                                          <!-- Go to team Page Button -->
+                                          <div style="text-align: center; margin-top: 2rem;">
+                                            <a href="team.html" class="goto-page-button">Go to Team Page</a>
+                                          </div>
+
+    </section>
+
+
+    <!-- Content Page Content -->
+    <section class="content-section">
+      <h2>Content Page</h2>
+      <hr>
+      <hr>
+      <h3>Introduction:</h3>
+      <p>
+        The Content Page (Sustainable Fishing) was designed using structured HTML
+        and CSS to ensure accessibility and responsiveness. Key elements in HTML
+        include semantic tags like &lt;header&gt;, &lt;main&gt;, and
+        &lt;footer&gt; to structure the content. The CSS Grid and Flexbox
+        techniques were used for layout management, ensuring a visually appealing
+        and mobile-friendly design. Navigation bars use unordered lists
+        (&lt;ul&gt;) with CSS styling for horizontal menus. Image sections were
+        structured using &lt;div&gt; containers with background-image and
+        &lt;img&gt; tags for responsive visuals. The "Go to Top" button was
+        implemented as an anchor link for smooth navigation.
+      </P>
+      <hr>
+
+
+
+      <h3>Challenges and Lessons Learned:</h3>
+      <p>
+        One challenge was ensuring consistent styling across different pages while
+        maintaining unique elements for each. This was resolved by creating
+        separate CSS files for each page while keeping common styles in a shared
+        style.css. Additionally, handling responsive images was a challenge, but
+        using max-width: 100% and object-fit: cover helped maintain proportion.
+        The key lesson learned was the importance of modular CSS structuring and
+        planning the HTML layout before implementation
+      </p>
+      <hr>
+      <h3>Accessibility:</h3>
+      <p>
+        The pages were built with accessibility in mind, using semantic HTML
+        elements (&lt;nav&gt;, &lt;section&gt;, &lt;h1&gt;-&lt;h3&gt;) to help
+        screen readers navigate the content. Alt text (alt="") was provided for
+        all images to support visually impaired users. Sufficient color contrast
+        was used in the text for readability, and the navigation bar follows a
+        logical tab order, allowing keyboard navigation.
+      </p>
+      <hr>
+
+      <h3>Compliance:</h3>
+      <p>
+        The web pages comply with Janet regulations by ensuring structured HTML,
+        ethical content, and accessibility standards. The use of valid HTML5
+        elements, clear labeling, and responsive design aligns with best
+        practices. There is no misleading information, and all images used are
+        relevant and properly sourced.
+      </p>
+      <hr>
+
+      <h3>References:</h3>
+
+      <p>
+        1. W3C (n.d.) Web Content Accessibility Guidelines (WCAG). Available at:
+        <a href="https://www.w3.org/WAI/" target="_blank">https://www.w3.org/WAI/</a> (Accessed: 6 Mar. 2025).
+      </p>
+
+      <p>
+        2. Mozilla Developer Network (MDN) (n.d.) Form validation in HTML.
+        Available at: <a href="https://developer.mozilla.org/" target="_blank">https://developer.mozilla.org/</a>
+        (Accessed: 6 Mar.
+        2025).
+      </p>
+
+      <p>
+        3. IIT Web Development Course Materials. (2023). Lecture Notes:
+        Responsive Web Design. (Accessed: 6 Mar. 2025).
+      </p>
+
+
+      <!-- Go to Feedback Page Button -->
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="content_ST3.html" class="goto-page-button">Go to Content
+          Page</a>
+      </div>
+
+    </section>
+
+
+    <!-- Profile Page Content -->
+    <section class="content-section">
+      <h2>Profile Page</h2>
+      <hr>
+      <hr>
+      <h3>Introduction:</h3>
+
+      <p>
+        The <b>Profile Page</b> is designed to showcase the personal and professional details of a user involved in the
+        "Beneath the Waves" initiative. It features a clean and modern layout, highlighting the user's avatar, role, and
+        a brief description of their passion for marine conservation. The page also includes sections for volunteering
+        activities, skills and goals, availability, and a contact form, making it a comprehensive hub for user
+        information. With a responsive design and interactive elements like progress bars and hover effects, the Profile
+        Page ensures an engaging and user-friendly experience while maintaining a focus on accessibility and visual
+        appeal.
+
+      </p>
+      <hr>
+
+      <h3>Technical Description</h3>
+
+      <h4>HTML Techniques:</h4>
+      <h5>1. Semantic Structure: <h5>
+
+          <ul class="styled-list">
+            <li>The page uses semantic HTML tags like 'header', 'main', and 'section' to structure the content
+              logically. This improves accessibility and SEO..</li>
+            <li>The 'nav' element is used for the navigation bar, which contains links to other pages on the website.
+            </li>
+          </ul>
+
+          <h5>2. User Avatar and Information Section: <h5>
+
+              <ul class="styled-list">
+                <li>The user's profile information is displayed using a combination of 'div', 'img', and 'p' tags. The
+                  'img' tag is used to display the user's avatar, while 'h2' and 'p' tags are used for the user's name,
+                  role, and description.</li>
+                <li>The 'ul' and 'li' tags are used to list the user's volunteering activities.</li>
+              </ul>
+
+              <h5>3. Skills & Goals Section: <h5>
+
+                  <ul class="styled-list">
+                    <li>The skills and goals are displayed using an unordered list ('ul'), with each skill represented
+                      by a 'li' tag. A 'span' element with a progress bar class is used to visually represent the
+                      progress of each skill.</li>
+                  </ul>
+
+                  <h5>4. Calendar Section: <h5>
+
+                      <ul class="styled-list">
+                        <li>The availability calendar is created using a 'table' element, with 'thead' and 'tbody' for
+                          structuring the days and times. This provides a clear and organized way to display the user's
+                          schedule.</li>
+                      </ul>
+
+                      <h5>5. Contact Form: <h5>
+
+                          <ul class="styled-list">
+                            <li>The contact form is created using the 'form' element, with 'input' and 'textarea' tags
+                              for user input. Labels are associated with each input field using the 'label' tag,
+                              improving accessibility.</li>
+                          </ul>
+
+
+
+                          <h4>Css Techniques:</h4>
+                          <h5>1. Flexbox Layout: <h5>
+
+                              <ul class="styled-list">
+                                <li>The .profile-main class uses display: flex; to create a flexible layout for the
+                                  profile sections. This ensures that the content is evenly distributed and responsive.
+                                </li>
+                                <li>The .interest-icons class uses display: flex; and justify-content: center; to align
+                                  the interest icons horizontally.</li>
+                              </ul>
+
+                              <h5>2. Avatar Styling: <h5>
+
+                                  <ul class="styled-list">
+                                    <li>The .avatar img class styles the user's avatar with a circular shape
+                                      (border-radius: 50%;) and a border (border: 5px solid var(--bright-blue);). This
+                                      creates a visually appealing and professional look.</li>
+                                  </ul>
+
+                                  <h5>3. Progress Bars: <h5>
+
+                                      <ul class="styled-list">
+                                        <li>The .progress-bar class is used to create progress bars for the skills
+                                          section. The width property is dynamically set using inline styles
+                                          (style="width: 80%;") to represent the progress percentage.</li>
+                                        <li>The ::after pseudo-element is used to display the percentage value next to
+                                          the progress bar.</li>
+                                      </ul>
+
+                                      <h5>4. Table Styling: <h5>
+
+                                          <ul class="styled-list">
+                                            <li>The .calendar table class styles the calendar table with borders
+                                              (border: 1px solid var(--light-blue);) and padding (padding: 0.5rem;).
+                                              This ensures the table is easy to read and visually consistent with the
+                                              rest of the page.</li>
+                                          </ul>
+
+                                          <h5>5. Form Styling: <h5>
+
+                                              <ul class="styled-list">
+                                                <li>The .contact-me form class uses flex-direction: column; to stack the
+                                                  form inputs vertically. The input and textarea elements are styled
+                                                  with padding, borders, and background colors to ensure they are
+                                                  visually appealing and easy to use.</li>
+                                                <li>The button element is styled with a background color transition
+                                                  (transition: background-color 0.3s ease;) to provide visual feedback
+                                                  when hovered over.</li>
+                                              </ul>
+
+                                              <h4>Purpose and Logic:</h4>
+
+                                              <ul class="styled-list">
+                                                <li><strong>Responsive Design</strong> – The use of Flexbox ensures that
+                                                  the profile page is responsive and adapts to different screen sizes,
+                                                  providing a consistent user experience across devices.</li>
+                                                <li><strong>Visual Hierarchy</strong> – The styling of headings
+                                                  (&lt;h2&gt;, &lt;h3&gt;), progress bars, and the avatar creates a
+                                                  clear visual hierarchy, making it easy for users to scan and
+                                                  understand the content.</li>
+                                                <li><strong>Interactivity</strong> – The hover effects on the progress
+                                                  bars and buttons enhance interactivity, providing visual feedback to
+                                                  users as they interact with the page.</li>
+                                                <li><strong>Accessibility</strong> – The use of semantic HTML tags and
+                                                  proper labeling of form inputs ensures that the page is accessible to
+                                                  all users, including those using screen readers.</li>
+                                              </ul>
+
+                                              <h4>Key HTML Tags and CSS Properties:</h4>
+                                              <h5>1. HTML Tags </h5>
+
+                                              <ul class="styled-list">
+                                                <li>&lt;header&gt;, &lt;main&gt;, &lt;section&gt;: Semantic structure
+                                                </li>
+                                                <li>&lt;img&gt;: User avatar.</li>
+                                                <li>&lt;ul&gt;, &lt;li&gt;: Lists for volunteering activities and
+                                                  skills.</li>
+                                                <li>&lt;table&gt;, &lt;thead&gt;, &lt;tbody&gt;: Calendar layout.</li>
+                                                <li>&lt;form&gt;, &lt;input&gt;, &lt;textarea&gt;, &lt;label&gt;:
+                                                  Contact form.</li>
+                                              </ul>
+
+                                              <h5>2. CSS Properties: </h5>
+
+                                              <ul class="styled-list">
+                                                <li>display: flex;: Creates flexible layouts for sections and icons.
+                                                </li>
+                                                <li>border-radius: 50%;: Styles the avatar as a circle.</li>
+                                                <li>width: 80%;: Dynamically sets the width of progress bars.</li>
+                                                <li>::after: Displays percentage values next to progress bars.</li>
+                                                <li>border: 1px solid var(--light-blue);: Styles table borders.</li>
+                                                <li>transition: background-color 0.3s ease;: Adds hover effects to
+                                                  buttons.</li>
+
+
+                                              </ul>
+
+
+
+                                              <!-- Go to Profile Page Button -->
+                                              <div style="text-align: center; margin-top: 2rem;">
+                                                <a href="profile.html" class="goto-page-button">Go to Profile
+                                                  Page</a>
+                                              </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+  </main>
+
+  <!-- Anchor for Bottom of the Page -->
+  <a id="bottom"></a>
+
+  <footer class="main-footer">
+    <p>&copy; 2025 Life Below Water Initiative</p>
+    <div class="editor-links">
+      <a href="pageEditor_ST1.html"> Thisara </a>
+      <a href="pageEditor_ST2.html"> Senith </a>
+      <a href="pageEditor_ST3.html"> Hansana </a>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Editor - Senith</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/pageEditor.css" />
+  <!-- Use your existing CSS file -->
+</head>
+
+<body class="content-body common-body">
+  <header class="main-header">
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="table.html">Impact Data</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+        <li><a href="team.html">Team</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pageeditor-main">
+    <h1 class="pageeditor-title h2-heading">Senith - Editor's Page</h1>
+
+    <!-- Name, Role, and Work -->
+    <div class="pageeditor-role">
+      <h2>Senith Chandul</h2>
+      <p>Role: Student 2</p>
+      <p>Designed and implemented pages: Home, Table, Content, and Sitemap</p>
+    </div>
+
+    <!-- Template Section -->
+    <section class="content-section">
+      <h2>Template</h2>
+      <hr />
+      <h3>Introduction:</h3>
+      <p>
+        The <b>Template</b> serves as the foundation for all pages on the
+        "Life Below Water" website. It includes a consistent header,
+        navigation bar, and footer across all pages, ensuring a cohesive user
+        experience. The template is designed to be responsive, accessible, and
+        visually appealing, with a focus on reusability and modularity.
+      </p>
+      <hr />
+
+      <h3>Technical Description</h3>
+      <h4>HTML Techniques:</h4>
+      <p>
+        The template is built using semantic HTML tags like &lt;header&gt;,
+        &lt;nav&gt;, &lt;main&gt;, and &lt;footer&gt;. The navigation bar is
+        created using an unordered list (&lt;ul&gt;) with list items
+        (&lt;li&gt;) and anchor tags (&lt;a&gt;) for each page link. The
+        footer contains copyright information and links to editor pages.
+      </p>
+
+      <h4>CSS Techniques:</h4>
+      <p>
+        The `style.css` file styles the template with a fixed header,
+        responsive navigation bar, and a footer that sticks to the bottom of
+        the page. Flexbox is used to align the navigation links horizontally,
+        and media queries ensure the layout adapts to different screen sizes.
+        The header and footer use a dark blue background color with light blue
+        text for contrast.
+      </p>
+
+      <h4>Purpose and Logic:</h4>
+      <p>
+        The template ensures consistency across all pages by providing a
+        reusable structure for the header, navigation bar, and footer. The
+        responsive design ensures the website is accessible on all devices,
+        while the modular structure makes it easy to add or modify content.
+      </p>
+
+      <h4>Key HTML Tags and CSS Properties:</h4>
+      <ul class="styled-list">
+        <li>
+          &lt;header&gt;, &lt;nav&gt;, &lt;footer&gt;: Semantic structure.
+        </li>
+        <li>&lt;ul&gt;, &lt;li&gt;, &lt;a&gt;: Navigation bar.</li>
+        <li>display: flex;: Horizontal alignment of navigation links.</li>
+        <li>position: fixed;: Fixed header.</li>
+        <li>
+          background-color: var(--very-dark-blue);: Header and footer styling.
+        </li>
+      </ul>
+      <hr />
+
+      <h3>Challenges and Lessons Learned:</h3>
+      <p>
+        One challenge was ensuring the navigation bar remained responsive on
+        smaller screens. This was resolved by using media queries to adjust
+        the font size and padding. Another challenge was making the footer
+        stick to the bottom of the page, which was achieved using Flexbox and
+        min-height properties.
+      </p>
+      <hr />
+
+      <h3>Accessibility:</h3>
+      <p>
+        The template follows accessibility best practices by using semantic
+        HTML tags and providing clear labels for navigation links. The
+        navigation bar is keyboard-friendly, and the footer includes
+        descriptive text for screen readers.
+      </p>
+      <hr />
+
+      <h3>Compliance:</h3>
+      <p>
+        The template complies with Janet regulations by ensuring proper
+        content structuring, clear labeling, and responsive design. It also
+        adheres to WCAG guidelines for accessibility.
+      </p>
+      <hr />
+
+      <h3>References:</h3>
+      <p>
+        1. W3C (n.d.) Web Content Accessibility Guidelines (WCAG). Available
+        at:
+        <a href="https://www.w3.org/WAI/" target="_blank">https://www.w3.org/WAI/</a>
+        (Accessed: [Date]).
+      </p>
+      <p>
+        2. Mozilla Developer Network (MDN) (n.d.) CSS Flexbox. Available at:
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout"
+          target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout</a>
+        (Accessed: [Date]).
+      </p>
+    </section>
+
+    <!-- Navigation Bar Section -->
+    <section class="content-section">
+      <h2>Navigation Bar</h2>
+      <hr />
+      <h3>Introduction:</h3>
+      <p>
+        The <b>Navigation Bar</b> is a key component of the template,
+        providing users with easy access to all major pages on the website. It
+        is designed to be responsive, accessible, and visually consistent
+        across all pages. The navigation bar includes links to the Home,
+        Impact Data, Content, and Sitemap pages, as well as other relevant
+        sections.
+      </p>
+      <hr />
+
+      <h3>Technical Description</h3>
+      <h4>HTML Techniques:</h4>
+      <p>
+        The navigation bar is created using an unordered list (&lt;ul&gt;)
+        with list items (&lt;li&gt;) and anchor tags (&lt;a&gt;) for each page
+        link. The active page is highlighted using a CSS class (`active`), and
+        hover effects are applied to enhance interactivity.
+      </p>
+
+      <h4>CSS Techniques:</h4>
+      <p>
+        The `style.css` file styles the navigation bar with a dark blue
+        background color and light blue text. Flexbox is used to align the
+        links horizontally, and hover effects change the text color to bright
+        blue. The active page is highlighted with a border-bottom and a
+        different text color.
+      </p>
+
+      <h4>Purpose and Logic:</h4>
+      <p>
+        The navigation bar provides a consistent and intuitive way for users
+        to navigate the website. The responsive design ensures it works well
+        on all devices, while the hover and active states enhance user
+        interaction.
+      </p>
+
+      <h4>Key HTML Tags and CSS Properties:</h4>
+      <ul class="styled-list">
+        <li>&lt;ul&gt;, &lt;li&gt;, &lt;a&gt;: Navigation bar structure.</li>
+        <li>display: flex;: Horizontal alignment of links.</li>
+        <li>color: var(--light-blue);: Text color.</li>
+        <li>
+          border-bottom: 2px solid var(--bright-blue);: Active page indicator.
+        </li>
+      </ul>
+      <hr />
+
+      <h3>Challenges and Lessons Learned:</h3>
+      <p>
+        One challenge was ensuring the navigation bar remained usable on
+        smaller screens. This was resolved by using media queries to stack the
+        links vertically and adjust the font size. Another challenge was
+        implementing the active page indicator, which was achieved using
+        JavaScript to dynamically add the `active` class.
+      </p>
+      <hr />
+
+      <h3>Accessibility:</h3>
+      <p>
+        The navigation bar follows accessibility best practices by using
+        semantic HTML tags and providing clear labels for links. It is
+        keyboard-navigable, and the active page is clearly indicated for
+        screen readers.
+      </p>
+      <hr />
+
+      <h3>Compliance:</h3>
+      <p>
+        The navigation bar complies with Janet regulations by ensuring proper
+        content structuring, clear labeling, and responsive design. It also
+        adheres to WCAG guidelines for accessibility.
+      </p>
+      <hr />
+
+      <h3>References:</h3>
+      <p>
+        1. W3C (n.d.) Web Content Accessibility Guidelines (WCAG). Available
+        at:
+        <a href="https://www.w3.org/WAI/" target="_blank">https://www.w3.org/WAI/</a>
+        (Accessed: [Date]).
+      </p>
+      <p>
+        2. Mozilla Developer Network (MDN) (n.d.) CSS Flexbox. Available at:
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout"
+          target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout</a>
+        (Accessed: [Date]).
+      </p>
+    </section>
+
+    <!-- Home Page Content -->
+    <section class="content-section">
+      <h2>Home Page</h2>
+      <hr />
+      <h3>Introduction:</h3>
+      <p>
+        The <b>Home Page</b> serves as the main landing page for the "Life
+        Below Water" initiative. It introduces users to the website's mission
+        and provides quick access to key focus areas such as marine pollution,
+        coral reef protection, sustainable fishing, and climate impact. The
+        page features a hero section with a call-to-action, followed by
+        interactive tiles that link to content pages. The design is clean,
+        modern, and responsive, ensuring a seamless user experience across
+        devices.
+      </p>
+      <hr />
+
+      <h3>Technical Description</h3>
+      <h4>HTML Techniques:</h4>
+      <p>
+        The `home.html` page uses semantic HTML tags like &lt;header&gt;,
+        &lt;main&gt;, and &lt;section&gt; to structure the content. The hero
+        section is created using a &lt;div&gt; with a background image and
+        overlay. The focus areas are displayed using a grid layout with
+        &lt;a&gt; tags wrapped around &lt;div&gt; elements for each tile. Each
+        tile contains an image and an overlay with text.
+      </p>
+
+      <h4>CSS Techniques:</h4>
+      <p>
+        The `style.css` file styles the home page with a responsive grid
+        layout for the tiles, hover effects for interactivity, and a fixed
+        navigation bar. The hero section uses a linear gradient overlay for
+        better text visibility. Flexbox and CSS Grid are used to ensure the
+        layout adapts to different screen sizes.
+      </p>
+
+      <h4>Purpose and Logic:</h4>
+      <p>
+        The home page is designed to be visually engaging and user-friendly.
+        It provides a clear overview of the website's purpose and directs
+        users to explore specific topics. The responsive design ensures
+        accessibility on all devices, while the interactive elements encourage
+        user engagement.
+      </p>
+
+      <h4>Key HTML Tags and CSS Properties:</h4>
+      <ul class="styled-list">
+        <li>
+          &lt;header&gt;, &lt;main&gt;, &lt;section&gt;: Semantic structure.
+        </li>
+        <li>&lt;div&gt;: Container for hero section and tiles.</li>
+        <li>display: grid;: Creates a responsive grid layout for tiles.</li>
+        <li>
+          background-image: linear-gradient();: Adds overlay to the hero
+          section.
+        </li>
+      </ul>
+      <hr />
+
+      <h3>Challenges and Lessons Learned:</h3>
+      <p>
+        One challenge was ensuring the hero section's text remained readable
+        across different screen sizes. This was resolved by using a
+        combination of responsive font sizes and a gradient overlay. Another
+        challenge was creating a seamless transition between the hero section
+        and the tiles, which was achieved by adjusting the padding and
+        margins.
+      </p>
+      <hr />
+
+      <h3>Accessibility:</h3>
+      <p>
+        The home page follows accessibility best practices by using semantic
+        HTML tags and providing alt text for images. The navigation bar is
+        keyboard-friendly, and the tiles are clearly labeled for screen
+        readers.
+      </p>
+      <hr />
+
+      <h3>Compliance:</h3>
+      <p>
+        The home page complies with Janet regulations by ensuring proper
+        content structuring, clear labeling, and responsive design. It also
+        adheres to WCAG guidelines for accessibility.
+      </p>
+      <hr />
+
+      <h3>References:</h3>
+      <p>
+        1. W3C (n.d.) Web Content Accessibility Guidelines (WCAG). Available
+        at:
+        <a href="https://www.w3.org/WAI/" target="_blank">https://www.w3.org/WAI/</a>
+        (Accessed: [Date]).
+      </p>
+      <p>
+        2. Mozilla Developer Network (MDN) (n.d.) CSS Grid Layout. Available
+        at:
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout"
+          target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout</a>
+        (Accessed: [Date]).
+      </p>
+
+      <!-- Go to Home Page Button -->
+      <div style="text-align: center; margin-top: 2rem">
+        <a href="home.html" class="goto-page-button">Go to Home Page</a>
+      </div>
+    </section>
+
+    <!-- Table Page Content -->
+    <section class="content-section">
+      <h2>Table Page</h2>
+      <hr />
+      <h3>Introduction:</h3>
+      <p>
+        The <b>Table Page</b> displays impact data related to marine
+        conservation efforts across various countries. It uses a responsive
+        table layout to present data on CO₂ emissions, protected areas, and
+        conservation status. The table is styled with icons and color-coded
+        status indicators to enhance readability and user engagement.
+      </p>
+      <hr />
+
+      <h3>Technical Description</h3>
+      <h4>HTML Techniques:</h4>
+      <p>
+        The `table.html` page uses the &lt;table&gt; element to structure the
+        data. Each row (&lt;tr&gt;) contains cells (&lt;td&gt;) for country
+        names, CO₂ emissions, protected areas, and status. Icons are added
+        using Font Awesome, and status indicators are styled with &lt;span&gt;
+        tags.
+      </p>
+
+      <h4>CSS Techniques:</h4>
+      <p>
+        The `table.css` file styles the table with alternating row colors,
+        hover effects, and responsive design. The status indicators use
+        background colors and border-radius to create a pill-like appearance.
+        The table is centered on the page and adapts to different screen
+        sizes.
+      </p>
+
+      <h4>Purpose and Logic:</h4>
+      <p>
+        The table page provides a clear and concise way to present complex
+        data. The use of icons and color-coded status indicators makes it easy
+        for users to quickly understand the information. The responsive design
+        ensures the table is accessible on all devices.
+      </p>
+
+      <h4>Key HTML Tags and CSS Properties:</h4>
+      <ul class="styled-list">
+        <li>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;: Table structure.</li>
+        <li>&lt;span&gt;: Status indicators.</li>
+        <li>background-color: rgba();: Alternating row colors.</li>
+        <li>border-radius: 15px;: Pill-like status indicators.</li>
+      </ul>
+      <hr />
+
+      <h3>Challenges and Lessons Learned:</h3>
+      <p>
+        One challenge was ensuring the table remained readable on smaller
+        screens. This was resolved by using horizontal scrolling for the table
+        and adjusting font sizes. Another challenge was styling the status
+        indicators, which was achieved using CSS pseudo-elements.
+      </p>
+      <hr />
+
+      <h3>Accessibility:</h3>
+      <p>
+        The table page follows accessibility best practices by using semantic
+        HTML tags and providing clear labels for icons and status indicators.
+        The table is keyboard-navigable, and the data is presented in a
+        logical order.
+      </p>
+      <hr />
+
+      <h3>Compliance:</h3>
+      <p>
+        The table page complies with Janet regulations by ensuring proper data
+        structuring, clear labeling, and responsive design. It also adheres to
+        WCAG guidelines for accessibility.
+      </p>
+      <hr />
+
+      <h3>References:</h3>
+      <p>
+        1. W3C (n.d.) Web Content Accessibility Guidelines (WCAG). Available
+        at:
+        <a href="https://www.w3.org/WAI/" target="_blank">https://www.w3.org/WAI/</a>
+        (Accessed: [Date]).
+      </p>
+      <p>
+        2. Font Awesome (n.d.) Icons. Available at:
+        <a href="https://fontawesome.com/" target="_blank">https://fontawesome.com/</a>
+        (Accessed: [Date]).
+      </p>
+
+      <!-- Go to Table Page Button -->
+      <div style="text-align: center; margin-top: 2rem">
+        <a href="table.html" class="goto-page-button">Go to Table Page</a>
+      </div>
+    </section>
+
+    <!-- Content Page Content -->
+    <!-- Content Page Section -->
+    <section class="content-section">
+      <h2>Content Pages</h2>
+      <hr />
+      <h3>Introduction:</h3>
+      <p>
+        The <b>Content Pages</b> for "Coral Reef Protection" and "Climate
+        Impact" were designed to provide detailed information on these
+        critical topics. Each page follows a structured layout with sections
+        for introduction, importance, threats, conservation/mitigation
+        strategies, and ways to support the cause. The pages are visually
+        engaging, with images, horizontal navigation bars, and interactive
+        elements to enhance user experience.
+      </p>
+      <hr />
+
+      <h3>Technical Description</h3>
+      <h4>HTML Techniques:</h4>
+      <p>
+        Both content pages use semantic HTML tags like &lt;header&gt;,
+        &lt;main&gt;, and &lt;section&gt; to structure the content. The pages
+        are divided into sections using &lt;section&gt; tags, each with a
+        unique ID for navigation. The horizontal navigation bar is created
+        using an unordered list (&lt;ul&gt;) with anchor tags (&lt;a&gt;) for
+        smooth scrolling between sections. Images are displayed using the
+        &lt;img&gt; tag, and captions are added using &lt;p&gt; tags.
+      </p>
+
+      <h4>CSS Techniques:</h4>
+      <p>
+        The `content.css` file styles the pages with a consistent design. Key
+        CSS features include:
+      </p>
+      <ul class="styled-list">
+        <li>
+          <strong>Full-Width Rectangle</strong> – A container for images at
+          the top of the page, styled with `display: flex;` and `gap: 2rem;`
+          to create a responsive layout.
+        </li>
+        <li>
+          <strong>Horizontal Navigation Bar</strong> – Styled with `display:
+          flex;` and `justify-content: space-around;` to align links
+          horizontally.
+        </li>
+        <li>
+          <strong>Content Sections</strong> – Each section uses a
+          semi-transparent background (`background-color: rgba(5, 25, 35,
+          0.8);`) and rounded corners (`border-radius: 10px;`) for a modern
+          look.
+        </li>
+        <li>
+          <strong>Image Gallery</strong> – Images in the "Threats" and
+          "Conservation/Mitigation" sections are displayed in a grid layout
+          using `display: flex;` and `gap: 1rem;`.
+        </li>
+        <li>
+          <strong>Go to Top Button</strong> – A fixed-position button at the
+          bottom-right corner allows users to quickly return to the top of the
+          page.
+        </li>
+      </ul>
+
+      <h4>Purpose and Logic:</h4>
+      <p>
+        The content pages are designed to educate users about coral reef
+        protection and climate impact in an engaging and accessible way. The
+        structured layout ensures that information is easy to navigate, while
+        the use of images and interactive elements enhances user engagement.
+        The responsive design ensures the pages work well on all devices.
+      </p>
+
+      <h4>Key HTML Tags and CSS Properties:</h4>
+      <ul class="styled-list">
+        <li>
+          &lt;section&gt;, &lt;nav&gt;, &lt;img&gt;: Semantic structure and
+          content.
+        </li>
+        <li>
+          display: flex;: Used for the image rectangle and horizontal
+          navigation bar.
+        </li>
+        <li>
+          background-color: rgba();: Semi-transparent background for content
+          sections.
+        </li>
+        <li>position: fixed;: Used for the "Go to Top" button.</li>
+      </ul>
+      <hr />
+
+      <h3>Challenges and Lessons Learned:</h3>
+      <p>
+        One challenge was ensuring the images in the full-width rectangle
+        remained responsive without losing their aspect ratio. This was
+        resolved using the `object-fit: cover;` property. Another challenge
+        was implementing the horizontal navigation bar with smooth scrolling,
+        which was achieved using anchor links and CSS styling. These
+        experiences reinforced the importance of responsive design and
+        user-friendly navigation.
+      </p>
+      <hr />
+
+      <h3>Accessibility:</h3>
+      <p>
+        The content pages follow accessibility best practices by using
+        semantic HTML tags and providing alt text for images. The navigation
+        bar is keyboard-friendly, and the "Go to Top" button is clearly
+        labeled for screen readers. The pages also use sufficient color
+        contrast for readability.
+      </p>
+      <hr />
+
+      <h3>Compliance:</h3>
+      <p>
+        The content pages comply with Janet regulations by ensuring proper
+        content structuring, clear labeling, and responsive design. They also
+        adhere to WCAG guidelines for accessibility.
+      </p>
+      <hr />
+
+      <h3>References:</h3>
+      <p>
+        1. W3C (n.d.) Web Content Accessibility Guidelines (WCAG). Available
+        at:
+        <a href="https://www.w3.org/WAI/" target="_blank">https://www.w3.org/WAI/</a>
+        (Accessed: [Date]).
+      </p>
+      <p>
+        2. Mozilla Developer Network (MDN) (n.d.) CSS Flexbox. Available at:
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout"
+          target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout</a>
+        (Accessed: [Date]).
+      </p>
+
+      <!-- Go to Content Pages Button -->
+      <div style="text-align: center; margin-top: 2rem">
+        <a href="content_ST2.html" class="goto-page-button">Go to Coral Reef Protection Page</a>
+        <a href="content_ST2ii.html" class="goto-page-button">Go to Climate Impact Page</a>
+      </div>
+    </section>
+
+    <!-- Sitemap Page Content -->
+    <section class="content-section">
+      <h2>Sitemap Page</h2>
+      <hr />
+      <h3>Introduction:</h3>
+      <p>
+        The <b>Sitemap Page</b> provides an overview of the website's
+        structure, including links to all major pages and sections. It uses a
+        hierarchical layout to display the relationships between different
+        pages, making it easy for users to navigate the site.
+      </p>
+      <hr />
+
+      <h3>Technical Description</h3>
+      <h4>HTML Techniques:</h4>
+      <p>
+        The `sitemap.html` page uses a combination of &lt;div&gt; and
+        &lt;a&gt; tags to create a hierarchical layout. Each node represents a
+        page or section, and sub-pages are nested within their parent nodes.
+        The page also includes links to editor and validation pages.
+      </p>
+
+      <h4>CSS Techniques:</h4>
+      <p>
+        The `sitemap.css` file styles the sitemap with a responsive grid
+        layout, hover effects for nodes, and a clear visual hierarchy. The
+        nodes are styled with background colors, border-radius, and box-shadow
+        to create a visually appealing design.
+      </p>
+
+      <h4>Purpose and Logic:</h4>
+      <p>
+        The sitemap page is designed to provide a clear and concise overview
+        of the website's structure. The hierarchical layout helps users
+        understand the relationships between different pages, while the
+        responsive design ensures accessibility on all devices.
+      </p>
+
+      <h4>Key HTML Tags and CSS Properties:</h4>
+      <ul class="styled-list">
+        <li>&lt;div&gt;, &lt;a&gt;: Hierarchical layout.</li>
+        <li>display: grid;: Responsive grid layout.</li>
+        <li>background-color: rgba();: Node styling.</li>
+        <li>box-shadow: 0 4px 8px rgba();: Visual hierarchy.</li>
+      </ul>
+      <hr />
+
+      <h3>Challenges and Lessons Learned:</h3>
+      <p>
+        One challenge was ensuring the sitemap remained readable on smaller
+        screens. This was resolved by using a responsive grid layout and
+        adjusting font sizes. Another challenge was creating a clear visual
+        hierarchy, which was achieved using background colors and box-shadow.
+      </p>
+      <hr />
+
+      <h3>Accessibility:</h3>
+      <p>
+        The sitemap page follows accessibility best practices by using
+        semantic HTML tags and providing clear labels for nodes. The page is
+        keyboard-navigable, and the hierarchical layout is clearly labeled for
+        screen readers.
+      </p>
+      <hr />
+
+      <h3>Compliance:</h3>
+      <p>
+        The sitemap page complies with Janet regulations by ensuring proper
+        content structuring, clear labeling, and responsive design. It also
+        adheres to WCAG guidelines for accessibility.
+      </p>
+      <hr />
+
+      <h3>References:</h3>
+      <p>
+        1. W3C (n.d.) Web Content Accessibility Guidelines (WCAG). Available
+        at:
+        <a href="https://www.w3.org/WAI/" target="_blank">https://www.w3.org/WAI/</a>
+        (Accessed: [Date]).
+      </p>
+      <p>
+        2. Mozilla Developer Network (MDN) (n.d.) CSS Grid Layout. Available
+        at:
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout"
+          target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout</a>
+        (Accessed: [Date]).
+      </p>
+
+      <!-- Go to Sitemap Page Button -->
+      <div style="text-align: center; margin-top: 2rem">
+        <a href="sitemap.html" class="goto-page-button">Go to Sitemap Page</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <p>&copy; 2025 Life Below Water Initiative</p>
+    <div class="editor-links">
+      <a href="pageEditor_ST1.html"> Thisara </a>
+      <a href="pageEditor_ST2.html"> Senith </a>
+      <a href="pageEditor_ST3.html"> Hansana </a>
+    </div>
+  </footer>
+</body>
+
+</html>
