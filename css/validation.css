@@ -1,0 +1,122 @@
+/* Validation Page Specific Styles */
+.validation-main {
+    padding: 2rem;
+    min-height: 70vh;
+    text-align: center;
+  }
+  
+  /* Validation Title */
+  .validation-title {
+    font-size: 2.5rem;
+    color: var(--light-blue);
+    margin-bottom: 2rem;
+  }
+  
+  /* Validation Sections */
+  .validation-section {
+    background-color: rgba(5, 25, 35, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 75%;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .validation-section h2 {
+    font-size: 2rem;
+    color: var(--light-blue);
+    margin-bottom: 1rem;
+  }
+  
+  .validation-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--light-blue);
+    margin-bottom: 1rem;
+  }
+  
+  /* Validation Evidence (Images and Captions) */
+  .validation-evidence {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  .validation-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .validation-caption {
+    font-size: 0.9rem;
+    color: var(--light-blue);
+    margin-top: 0.5rem;
+  }
+  
+  /* Go to Page Button */
+  .goto-page-button {
+    display: inline-block;
+    background-color: var(--bright-blue);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .goto-page-button:hover {
+    background-color: var(--medium-blue);
+  }
+  
+  /* Reflection Section */
+  #reflection {
+    background-color: rgba(5, 25, 35, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 75%;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  #reflection h2 {
+    font-size: 2rem;
+    color: var(--light-blue);
+    margin-bottom: 1rem;
+  }
+  
+  #reflection p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--light-blue);
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer Styles */
+  .main-footer {
+    background-color: rgba(5, 25, 35, 0.8);
+    padding: 1rem;
+    text-align: center;
+    color: var(--light-blue);
+    margin-top: 2rem;
+  }
+  
+  .main-footer p {
+    margin: 0;
+  }
+  
+  .editor-links a {
+    color: var(--bright-blue);
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .editor-links a:hover {
+    color: var(--medium-blue);
+  }

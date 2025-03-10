@@ -85,59 +85,12 @@
   background-color: var(--bright-blue);
   border-radius: 5px;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.goto-feedback-button:hover {
+.goto-page-button:hover {
   background-color: var(--medium-blue);
-}
-
-/* Go to Team Page Button Styles */
-.goto-team-button {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  color: var(--white);
-  background-color: var(--bright-blue);
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.goto-team-button:hover {
-  background-color: var(--medium-blue);
-}
-
-/* Go to Content Page Button Styles */
-.goto-content-button {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  color: var(--white);
-  background-color: var(--bright-blue);
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.goto-content-button:hover {
-  background-color: var(--medium-blue);
-}
-
-/* Go to Profile Page Button Styles */
-.goto-profile-button {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  color: var(--white);
-  background-color: var(--bright-blue);
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.goto-profile-button:hover {
-  background-color: var(--medium-blue);
+  transform: scale(1.02);
 }
 
 
@@ -208,4 +161,12 @@
   object-fit: cover; /* Ensure images fit nicely */
   border-radius: 10px; /* Optional: Add border-radius to the images */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for better visual appeal */
+}
+
+.goto-validation {
+  font-size: 1.2rem;
+  background-color: var(--bright-blue);
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1rem;
 }
