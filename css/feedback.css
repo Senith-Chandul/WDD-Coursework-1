@@ -21,7 +21,7 @@ fieldset {
   padding: 2rem 4rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  border: none; /* Remove the border */
+  border: none;
 }
 
 .detail-type {
@@ -61,16 +61,16 @@ fieldset {
 
 /* Style the dropdown menu */
 .form-group select {
-  height: auto; /* Adjust height to fit all options */
-  appearance: none; /* Remove default arrow */
-  background-color: rgba(5, 25, 35, 0.8); /* Match form background */
-  color: var(--light-blue); /* Text color */
+  height: auto;
+  appearance: none; 
+  background-color: rgba(5, 25, 35, 0.8); 
+  color: var(--light-blue); 
 }
 
 /* Style the dropdown options */
 .form-group select option {
-  background-color: rgba(5, 25, 35, 0.8); /* Dark background for options */
-  color: var(--light-blue); /* Text color for options */
+  background-color: rgba(5, 25, 35, 0.8); 
+  color: var(--light-blue);
 }
 
 /* Add a custom arrow for the dropdown */
@@ -83,8 +83,8 @@ fieldset {
 
 /* Highlight selected options in the multi-select dropdown */
 .form-group select[multiple] option:checked {
-  background-color: var(--light-blue); /* Highlight color for selected options */
-  color: var(--light-blue); /* Text color for selected options */
+  background-color: var(--light-blue);
+  color: var(--light-blue); 
 }
 
 .form-group input[type="text"]::placeholder,
@@ -147,16 +147,16 @@ fieldset {
 /* Highlight emojis on hover */
 .emoji-rating span:hover {
   transform: scale(1.4);
-  color: #ffcc00; /* Highlight color for hovered emoji */
+  color: #ffcc00;
 }
 
 /* Highlight the selected emoji */
 .emoji-rating span.selected-emoji {
   transform: scale(1.4);
-  color: #ffcc00; /* Highlight color for selected emoji */
-  border: 2px solid #ffcc00; /* Add a border to the selected emoji */
-  border-radius: 50%; /* Make the border circular */
-  padding: 0.2rem; /* Add some padding for better visibility */
+  color: #ffcc00;
+  border: 2px solid #ffcc00; 
+  border-radius: 50%;
+  padding: 0.2rem;
 }
 
 .submit-button {

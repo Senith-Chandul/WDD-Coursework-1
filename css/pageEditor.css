@@ -15,7 +15,7 @@
 .pageeditor-title {
   font-size: 3rem;
   color: var(--light-blue);
-  margin-bottom: 1rem; /* Reduced margin-bottom to reduce space */
+  margin-bottom: 1rem;
 }
 
 /* Name role and work */
@@ -57,10 +57,10 @@
 
 
 .content-section h4 {
-  font-size: 1.32rem; /* Adjust the size as needed */
-  color: var(--light-blue); /* Use the same color as other headings for consistency */
-  margin-bottom: 0.75rem; /* Add some spacing below the heading */
-  font-weight: 600; /* Make it slightly bold */
+  font-size: 1.32rem;
+  color: var(--light-blue);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
 }
 
 .content-section h5 {
@@ -110,7 +110,7 @@
 }
 
 .styled-list li strong {
-  color: var(--bright-blue); /* Highlight key terms */
+  color: var(--bright-blue);
   font-weight: bold;
 }
 
@@ -129,10 +129,10 @@
 
 .threat-image img {
   width: 100%;
-  height: 200px; /* Adjust height as needed */
-  object-fit: cover; /* Ensure images fit nicely */
-  border-radius: 10px; /* Optional: Add border-radius to the images */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for better visual appeal */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .image-caption {
@@ -157,10 +157,10 @@
 
 .practice-image img {
   width: 100%;
-  height: 200px; /* Adjust height as needed */
-  object-fit: cover; /* Ensure images fit nicely */
-  border-radius: 10px; /* Optional: Add border-radius to the images */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for better visual appeal */
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
 }
 
 .goto-validation {

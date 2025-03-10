@@ -164,5 +164,5 @@
 
 .inline-form-group .form-group {
     flex: 1;
-    margin-bottom: 0; /* Remove bottom margin for inline groups */
+    margin-bottom: 0;
 }

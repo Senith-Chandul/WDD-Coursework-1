@@ -31,7 +31,7 @@
 .data-table td {
     padding: 0.8rem;
     text-align: center;
-    border: 1px solid var(--medium-blue); /* Add border to table cells */
+    border: 1px solid var(--medium-blue);
 }
 
 .data-table th {

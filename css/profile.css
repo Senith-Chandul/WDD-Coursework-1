@@ -80,7 +80,7 @@
 }
 
 .skills-goals li {
-  position: relative; /* Add relative positioning to the list item */
+  position: relative;
   margin-bottom: 1rem;
   color: var(--light-blue);
 }

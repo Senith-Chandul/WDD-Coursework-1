@@ -64,8 +64,8 @@
 }
 
 .level-3 {
-    display: flex; /* Ensure level-3 is a flex container */
-    justify-content: center; /* Center items horizontally */
+    display: flex;
+    justify-content: center;
     gap: 2rem;
     margin-top: 1rem;
 }
@@ -96,7 +96,7 @@
 .content-node {
     background-color: var(--very-dark-blue);
     width: 200px;
-    margin: 0 auto; /* Center the content node */
+    margin: 0 auto; 
 }
 
 .support-node {

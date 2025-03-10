@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Editor - Hansana</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/pageEditor.css" />
+</head>
+
+<body class="content-body common-body">
+  <header class="main-header">
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="table.html">Impact Data</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+        <li><a href="team.html">Team</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pageeditor-main">
+    <h1 class="pageeditor-title h2-heading">Thisara - Editor's Page</h1>
+
+    <!-- Name, Role, and Work -->
+    <div class="pageeditor-role">
+      <h2>Hansana</h2>
+      <p>Role: Student 3</p>
+      <p>Designed and implemented pages: Splash Screen, Volunteer, and Sustainable Fishing Content</p>
+      <a href="validation_ST1.html" class="goto-page-button goto-validation">Validation Page</a>
+    </div>
+
+    <!-- Splash Screen Section -->
+    <section class="content-section">
+      <h2>Splash Screen</h2>
+      <hr />
+      <h3>Introduction:</h3>
+      <p>
+        The <b>Splash Screen</b> serves as the introductory page for the website, displaying the team members and redirecting users to the home page after 5 seconds. It features a clean design with a loader animation to indicate the redirect process.
+      </p>
+      <hr />
+
+      <h3>Technical Description</h3>
+      <h4>HTML Techniques:</h4>
+      <p>
+        The `splash.html` page uses a meta refresh tag (&lt;meta http-equiv="refresh"&gt;) for automatic redirection. Semantic HTML tags like &lt;header&gt; and &lt;section&gt; structure the content. Team members are listed using an unordered list (&lt;ul&gt;).
+      </p>
+
+      <h4>CSS Techniques:</h4>
+      <p>
+        The `style.css` file styles the splash screen with a centered layout and semi-transparent background. Key features include:
+      </p>
+      <ul class="styled-list">
+        <li><strong>Loader Animation</strong> – Created using CSS keyframes for rotation effects.</li>
+        <li><strong>Responsive Typography</strong> – Font sizes adjust for different screen sizes using media queries.</li>
+        <li><strong>Gradient Background</strong> – Subtle overlay on the background image for text readability.</li>
+      </ul>
+
+      <h4>Purpose and Logic:</h4>
+      <p>
+        The splash screen provides a professional first impression while ensuring seamless navigation to the main website. The 5-second delay allows users to view team information before redirection.
+      </p>
+      <hr />
+
+      <h3>Challenges and Lessons Learned:</h3>
+      <p>
+        Ensuring the loader animation synchronized perfectly with the 5-second redirect required precise timing adjustments. Testing across browsers revealed inconsistencies in meta refresh behavior, which were resolved using JavaScript as a fallback.
+      </p>
+      <hr />
+
+      <h3>Accessibility:</h3>
+      <p>
+        The page uses ARIA labels for the loader animation and semantic HTML for screen readers. Color contrast ratios meet WCAG standards.
+      </p>
+      <hr />
+
+      <h3>Compliance:</h3>
+      <p>
+        Complies with Janet regulations through proper redirection logic and accessible content structuring. Passes W3C validation for HTML5 and CSS3.
+      </p>
+      <hr />
+
+      <h3>References:</h3>
+      <p>
+        1. W3C (n.d.) Web Content Accessibility Guidelines (WCAG). Available at:
+        <a href="https://www.w3.org/WAI/" target="_blank">https://www.w3.org/WAI/</a>
+      </p>
+      <div style="text-align: center; margin-top: 2rem">
+        <a href="../splash.html" class="goto-page-button">Go to Splash Screen</a>
+      </div>
+    </section>
+
+    <!-- Volunteer Page Section -->
+    <section class="content-section">
+      <h2>Volunteer Page</h2>
+      <hr />
+      <h3>Introduction:</h3>
+      <p>
+        The <b>Volunteer Page</b> allows users to explore marine conservation programs and submit feedback. It features interactive program cards, a feedback form, and user testimonials.
+      </p>
+      <hr />
+
+      <h3>Technical Description</h3>
+      <h4>HTML Techniques:</h4>
+      <p>
+        Built using CSS Grid for program cards (&lt;div class="programs-container"&gt;) and Flexbox for the feedback form. The form includes input fields for name, email, rating, and comments.
+      </p>
+
+      <h4>CSS Techniques:</h4>
+      <p>
+        Key features in `volunteer.css`:
+      </p>
+      <ul class="styled-list">
+        <li><strong>Hover Effects</strong> – Program cards scale on hover using transform: scale()</li>
+        <li><strong>Overlay Animation</strong> – Details fade in on card hover using opacity transitions</li>
+        <li><strong>Responsive Grid</strong> – Cards reflow for mobile using grid-template-columns: repeat(auto-fit, minmax())</li>
+      </ul>
+
+      <h4>JavaScript Features:</h4>
+      <p>
+        Implemented scroll-triggered fade-in animations using Intersection Observer API. Form validation ensures all required fields are completed.
+      </p>
+      <hr />
+
+      <h3>Challenges and Lessons Learned:</h3>
+      <p>
+        Aligning the overlay text across different card sizes required position: absolute with top/bottom/left/right: 0. Testing revealed z-index issues in mobile view, resolved through careful stacking context management.
+      </p>
+      <hr />
+
+      <h3>Accessibility:</h3>
+      <p>
+        Form fields include proper &lt;label&gt; associations. ARIA roles added for screen readers. Color contrast meets AA standards.
+      </p>
+      <hr />
+
+      <h3>Compliance:</h3>
+      <p>
+        Passes W3C validation with zero errors. Complies with GDPR through explicit consent checkboxes in the form.
+      </p>
+      <hr />
+
+      <div style="text-align: center; margin-top: 2rem">
+        <a href="volunteer.html" class="goto-page-button">Go to Volunteer Page</a>
+      </div>
+    </section>
+
+    <!-- Content Page Section -->
+    <section class="content-section">
+      <h2>Content Page</h2>
+      <hr />
+      <h3>Introduction:</h3>
+      <p>
+        The <b>Sustainable Fishing</b> content page educates users about responsible fishing practices through structured sections, image galleries, and interactive elements.
+      </p>
+      <hr />
+
+      <h3>Technical Description</h3>
+      <h4>HTML Techniques:</h4>
+      <p>
+        Uses semantic &lt;section&gt; tags with ID-based navigation. Image galleries employ &lt;div class="content-gallery"&gt; with Flexbox layout. The sticky navigation bar uses position: sticky.
+      </p>
+
+      <h4>CSS Techniques:</h4>
+      <p>
+        Key features in `content.css`:
+      </p>
+      <ul class="styled-list">
+        <li><strong>Sticky Navigation</strong> – position: sticky with top: 0</li>
+        <li><strong>Responsive Images</strong> – object-fit: cover maintains aspect ratios</li>
+        <li><strong>Section Transitions</strong> – Smooth scroll behavior using scroll-behavior: smooth</li>
+      </ul>
+
+      <h4>JavaScript Features:</h4>
+      <p>
+        Implemented active state highlighting in the navigation bar using scroll event listeners. The "Go to Top" button appears on scroll using CSS transitions.
+      </p>
+      <hr />
+
+      <h3>Challenges and Lessons Learned:</h3>
+      <p>
+        Balancing text density with visual elements required careful grid planning. Initially poor Lighthouse scores for CLS were improved by setting explicit image dimensions.
+      </p>
+      <hr />
+
+      <h3>Accessibility:</h3>
+      <p>
+        All images include descriptive alt text. Navigation links have aria-current="page" indicators. Reduced motion preferences respected in animations.
+      </p>
+      <hr />
+
+      <h3>Compliance:</h3>
+      <p>
+        Meets WCAG 2.1 AA standards. Schema.org microdata added for better SEO.
+      </p>
+      <hr />
+
+      <div style="text-align: center; margin-top: 2rem">
+        <a href="content_ST1.html" class="goto-page-button">Go to Content Page</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <p>&copy; 2025 Life Below Water Initiative</p>
+    <div class="editor-links">
+      <a href="pageEditor_ST1.html"> Thisara </a>
+      <a href="pageEditor_ST2.html"> Senith </a>
+      <a href="pageEditor_ST3.html"> Hansana </a>
+    </div>
+  </footer>
+</body>
+
+</html>
